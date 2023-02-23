@@ -98,7 +98,7 @@
                 </div>
                 <!-- sample03-->
 
-                <div id="sample03" class="sample">
+                <div id="sample04" class="sample">
                     <h3>04. 데이터 이펙트 : 1부터 100까지 5의 배수 출력하기</h3>
                     <p>for문을 이용해서 1-100까지 5의 배수를 출력하는 예제입니다.<br>
                     if문을 이용해서 0-50까지 짝수만 출력하는 예제입니다.</p>
@@ -121,7 +121,7 @@ for(let i=0; i&lt;=100; i++){
                 </div>
                 <!-- sample04-->
 
-                <div id="sample03" class="sample">
+                <div id="sample05" class="sample">
                     <h3>05. 데이터 이펙트 : 1부터 100까지 짝수(파란색) 홀수(빨간색) 출력하기</h3>
                     <p>for문과 if문을 이용한 짝수 홀수 출력하는 방법입니다.</p>
 <pre class="line-numbers"><code class="language-js">for(let i=1; i&lt;100; i++){
@@ -134,7 +134,46 @@ for(let i=0; i&lt;=100; i++){
 }
 </code></pre>
                 </div>
-                <!-- sample0-->
+                <!-- sample05-->
+
+                <div id="sample06" class="sample">
+                    <h3>06. 데이터 이펙트 : for문을 이용해서 100칸 테이블 만들기</h3>
+                    <p>for문을 이용해 100칸 테이블 만드는 방법입니다.</p>
+<pre class="line-numbers"><code class="language-js">let table = "&lt;table border='1'&gt;";
+    
+for(let i=1; i&lt;=10; i++){
+    table += "&lt;tr&gt;";
+
+    for(let j=1; j&lt;=10; j++){
+        table += "&lt;td&gt;"+j+"&lt;/td&gt;";
+    }
+
+    table += "&lt;/tr&gt;";
+}
+table += "&lt;/table&gt;";
+
+document.write(table);
+</code></pre>
+                </div>
+                <!-- sample06-->
+                
+
+                <div id="sample07" class="sample">
+                    <h3>07. 데이터 이펙트 : 중첩 for문을 이용해서 구구단 만들기</h3>
+                    <p>중첩 for문을 이용해 구구단을 만드는 방법입니다.</p>
+<pre class="line-numbers"><code class="language-js">for(let i=2; i&lt;=9; i++){
+    document.write(i + "단","&lt;br&gt;");
+
+    for(let j=1; j&lt;=9; j++){
+        document.write(i + "*" + j + "=" + i*j);
+        document.write("&lt;br&gt;");
+    }
+
+    document.write("&lt;br&gt;&lt;br&gt;");
+}
+</code></pre>
+                </div>
+                <!-- sample07-->
 
                 <table border="1">
                     <tr>
