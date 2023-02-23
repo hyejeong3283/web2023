@@ -44,11 +44,18 @@
         </nav>
     </header>
     <!-- //header -->
+
     <main id="main">
         <div class="container">
             <div class="main__menu">
                 <ul>
                     <li><a href="#">01. 데이터 이펙트 : 1부터 100까지 출력하기</a></li>                  
+                    <li><a href="#">02. 데이터 이펙트 : 0부터 50까지 출력하기</a></li>                  
+                    <li><a href="#">03. 데이터 이펙트 : 1부터 100까지 짝수만 출력하기</a></li>                  
+                    <li><a href="#">04. 데이터 이펙트 : 1부터 100까지 5의 배수 출력하기</a></li>                  
+                    <li><a href="#">05. 데이터 이펙트 : 1부터 100까지 5의 배수(파란색) 7의 배수(빨간색) 출력하기</a></li>                  
+                    <li><a href="#">06. 데이터 이펙트 : for문을 이용해서 100칸 테이블 만들기</a></li>                  
+                    <li><a href="#">07. 데이터 이펙트 : 중첩 for문을 이용해서 구구단 만들기</a></li>                  
                 </ul>
             </div>
             <div class="main__sample">
@@ -65,7 +72,7 @@
                 <!-- sample01-->
 
                 <div id="sample02" class="sample">
-                    <h3>02. 0부터 50까지 출력하기</h3>
+                    <h3>02. 데이터 이펙트 : 0부터 50까지 출력하기</h3>
                     <p>for문을 이용해서 1-50까지 출력하는 예제입니다.</p>
 <pre class="line-numbers"><code class="language-js">for(let i=0; i&lt;=50; i++){ //반복문
     console.log(i); //초기값을 0을 설정하고 1씩 증가시켜서 50번 반복함
@@ -77,7 +84,7 @@
                 <!-- sample02-->
             
                 <div id="sample03" class="sample">
-                    <h3>03. 1부터 100까지 짝수만 출력하기</h3>
+                    <h3>03. 데이터 이펙트 : 1부터 100까지 짝수만 출력하기</h3>
                     <p>for문을 이용해서 1-100까지 짝수만 출력하는 예제입니다.</p>
 <pre class="line-numbers"><code class="language-js">for(let i=1; i&lt;=100; i+=2){
     console.log(i); //초기값을 1을 설정하고 2씩 증가시켜서 100번 반복함
@@ -92,7 +99,7 @@
                 <!-- sample03-->
 
                 <div id="sample03" class="sample">
-                    <h3>04. 1부터 100까지 5의 배수 출력하기</h3>
+                    <h3>04. 데이터 이펙트 : 1부터 100까지 5의 배수 출력하기</h3>
                     <p>for문을 이용해서 1-100까지 5의 배수를 출력하는 예제입니다.<br>
                     if문을 이용해서 0-50까지 짝수만 출력하는 예제입니다.</p>
 <pre class="line-numbers"><code class="language-js">// 증감 연산자를 이용한 방법
@@ -113,6 +120,144 @@ for(let i=0; i&lt;=100; i++){
 </code></pre>
                 </div>
                 <!-- sample04-->
+
+                <div id="sample03" class="sample">
+                    <h3>05. 데이터 이펙트 : 1부터 100까지 짝수(파란색) 홀수(빨간색) 출력하기</h3>
+                    <p>for문과 if문을 이용한 짝수 홀수 출력하는 방법입니다.</p>
+<pre class="line-numbers"><code class="language-js">for(let i=1; i&lt;100; i++){
+    if(i % 2 == 0){
+        document.write("&lt;span style='color:blue'&gt;"+i+"&lt;/span&gt;");
+    }
+    if(i % 2 == 1){
+        document.write("&lt;span style='color:red'&gt;"+i+"&lt;/span&gt;");
+    }
+}
+</code></pre>
+                </div>
+                <!-- sample0-->
+
+                <table border="1">
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </main>
@@ -144,10 +289,42 @@ for(let i=0; i&lt;=100; i++){
         //      console.log(i)
         // }    
         
-        for(let i=0; i<=100; i++){
-            if(i % 2 == 0){
-                console.log(i)
-            }
+        // for(let i=0; i<=100; i++){
+        //     if(i % 2 == 0){
+        //         console.log(i)
+        //     }
+        // }
+
+        // 05. 데이터 이펙트 : for문을 이용해서 테이블 만들기
+        
+        // for문을 이용해서 1부터 99까지 출력
+
+        // for(let i=1; 1<100; i++){
+        //     console.log(i)
+        // }
+
+        // for문을 이용해서 1부터 99까지 짝수 출력
+
+        // for(let i=1; 1<100; i++){
+        //     if(i % 2 == 0){
+        //         console.log(i)
+        //     }
+        // }
+
+        // for문을 이용해서 1부터 99까지 짝수(파란색) 출력
+        // for(let i=1; i<100; i++){
+        //     if(i % 2 == 0){
+        //         document.write("<span style='color:blue'>"+i+"</span>");
+        //     }
+        //     if(i % 2 == 1){
+        //         document.write("<span style='color:red'>"+i+"</span>");
+        //     }
+        // }
+        {
+            let table = "<table>";
+            table += "</table>";
+
+            document.write(table);
         }
     </script>
 
