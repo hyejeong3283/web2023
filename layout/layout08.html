@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }       
+        #aside {
+            width: 300px;
+            height: 1000px;
+            float: left;
+        }  
+        .side1 {
+            height: 200px;
+            background-color: #000;
+        }
+        .side2 {
+            height: 300px;
+            background-color: #111;
+        }
+        .side3 {
+            height: 400px;
+            background-color: #222;
+        }
+        #main {
+            width: 70%;
+            height: 1000px;
+            float: left;
+        } 
+        .banner {
+            width: 100%;
+            height: 200px;
+            background-color: #333;
+        }      
+        .section {
+            width: 100%;
+            height: 400px;
+        }
+        .section1 {
+            width: 33%;
+            background-color: #444;
+            float: left;
+        }      
+        .section2 {
+            width: 34%;
+            background-color: #555;
+            float: left;
+        }    
+        .section3 {
+            width: 33%;
+            background-color: #666;
+            float: left;
+        }     
+        .footer {
+            width: 100%;
+            height: 200px;
+        } 
+        .footer1 {
+            width: 50%;
+            background-color: #777;
+            float: left;
+        }     
+        .footer2 {
+            width: 50%;
+            height: 100px;
+            background-color: #888;
+            float: left;
+        }    
+        .footer3 {
+            width: 50%;
+            height: 100px;
+            background-color: #999;
+            float: left;
+        } 
+        .clearfix::before,
+        .clearfix::after{
+            section:'';
+            display: block;
+            line-height: 0;
+        }
+        .clearfix::after{
+            clear: both;
+        }   
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="aside">
+            <div class="side1"></div>
+            <div class="side2"></div>
+            <div class="side3"></div>
+        </div>
+        <div id="main">
+            <div class="banner"></div>
+            <div class="section clearfix">
+                <div class="section1"></div>
+                <div class="section2"></div>
+                <div class="section3"></div>
+            </div>
+            <div class="footer clearfix">
+                <div class="footer1"></div>
+                <div class="footer2"></div>
+                <div class="footer3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
