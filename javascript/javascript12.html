@@ -65,9 +65,15 @@
 <pre class="line-numbers"><code class="language-js">for(let i=1; i&lt;=100; i++){ //반복문
     console.log(i); //초기값을 1을 설정하고 1씩 증가시켜서 100번 반복함
 }
-
-// 결과값 : 1,2,3,4,5,6~~~100
 </code></pre>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                1,2,3,4,5,6~~~100
+                            </div>
+                        </details>
+                    </div>
                 </div>
                 <!-- sample01-->
 
@@ -77,9 +83,15 @@
 <pre class="line-numbers"><code class="language-js">for(let i=0; i&lt;=50; i++){ //반복문
     console.log(i); //초기값을 0을 설정하고 1씩 증가시켜서 50번 반복함
 }
-
-// 결과값 : 0,1,2,3,4,5,6~~~50
 </code></pre>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                0,1,2,3,4,5,6~~~50
+                            </div>
+                        </details>
+                    </div>
                 </div>
                 <!-- sample02-->
             
@@ -92,22 +104,26 @@
 
 //증감 연산자를 이용
 //i +=2는 i = i + 2와 같음(2씩 증가)
-
-// 결과값 : 2,4,6,8,10~~~50
 </code></pre>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                2,4,6,8,10~~~50
+                            </div>
+                        </details>
+                    </div>
                 </div>
                 <!-- sample03-->
 
                 <div id="sample04" class="sample">
-                    <h3>04. 데이터 이펙트 : 1부터 100까지 5의 배수 출력하기</h3>
-                    <p>for문을 이용해서 1-100까지 5의 배수를 출력하는 예제입니다.<br>
+                    <h3>04. 데이터 이펙트 : 1부터 100까지 배수 출력하기</h3>
+                    <p>증감연산자를 이용해서 1-100까지 5의 배수를 출력하는 예제입니다.<br>
                     if문을 이용해서 0-50까지 짝수만 출력하는 예제입니다.</p>
 <pre class="line-numbers"><code class="language-js">// 증감 연산자를 이용한 방법
 for(let i=1; i&lt;=100; i+=5){
     console.log(i); //초기값을 1을 설정하고 5씩 증가시켜서 100번 반복함
 }     
-
-// 결과값 : 5,10,15,20~~~100
 
 // if문을 이용한 방법
 for(let i=0; i&lt;=100; i++){
@@ -115,9 +131,16 @@ for(let i=0; i&lt;=100; i++){
         console.log(i);
     }
 }
-
-// 결과값 : 2,4,6,8,10~~~50
 </code></pre>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                5,10,15,20~~~100<br>
+                                2,4,6,8,10~~~50
+                            </div>
+                        </details>
+                    </div>
                 </div>
                 <!-- sample04-->
 
@@ -133,6 +156,23 @@ for(let i=0; i&lt;=100; i++){
     }
 }
 </code></pre>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                <script>
+                                    for(let i=1; i<100; i++){
+                                        if(i % 2 == 0){
+                                            document.write("<span style='color:blue'>"+i+"</span>");
+                                        }
+                                        if(i % 2 == 1){
+                                            document.write("<span style='color:red'>"+i+"</span>");
+                                        }
+                                    }
+                                </script>
+                            </div>
+                        </details>
+                    </div>
                 </div>
                 <!-- sample05-->
 
@@ -154,6 +194,29 @@ table += "&lt;/table&gt;";
 
 document.write(table);
 </code></pre>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                <script>
+                                    let table = "<table border='1'>";
+    
+                                    for(let i=1; i<=10; i++){
+                                        table += "<tr>";
+    
+                                        for(let j=1; j<=10; j++){
+                                            table += "<td>"+j+"</td>";
+                                        }
+    
+                                        table += "</tr>";
+                                    }
+                                    table += "</table>";
+    
+                                    document.write(table);
+                                </script>
+                            </div>
+                        </details>
+                    </div>
                 </div>
                 <!-- sample06-->
                 
@@ -172,131 +235,28 @@ document.write(table);
     document.write("&lt;br&gt;&lt;br&gt;");
 }
 </code></pre>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                               <script>
+                                    for(let i=2; i<=9; i++){
+                                        document.write(i + "단","<br>");
+
+                                    for(let j=1; j<=9; j++){
+                                        document.write(i + "*" + j + "=" + i*j);
+                                        document.write("<br>");
+                                    }
+
+                                    document.write("<br><br>");
+                                }
+                               </script>
+                            </di>
+                        </details>
+                    </div>
                 </div>
                 <!-- sample07-->
-
-                <table border="1">
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                    </tr>
-                </table>
+               
             </div>
         </div>
     </main>
@@ -359,12 +319,12 @@ document.write(table);
         //         document.write("<span style='color:red'>"+i+"</span>");
         //     }
         // }
-        {
-            let table = "<table>";
-            table += "</table>";
+        // {
+        //     let table = "<table>";
+        //     table += "</table>";
 
-            document.write(table);
-        }
+        //     document.write(table);
+        // }
     </script>
 
 </body>

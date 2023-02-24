@@ -263,18 +263,22 @@
                         <details>
                             <summary>결과 확인하기</summary>
                             <div>
-                                let table = "<table border='1'>";
-
-                                    for(let i=0; i<5; i++){
+                                <script>
+                                    let table = "<table border='1'>";
+    
+                                    for(let i=1; i<=5; i++){
                                         table += "<tr>";
-                                        for(let j=0; j<5; j++){
+    
+                                        for(let j=1; j<=5; j++){
                                             table += "<td>"+j+"</td>";
                                         }
+    
                                         table += "</tr>";
                                     }
                                     table += "</table>";
+    
                                     document.write(table);
-                            
+                                </script>                           
                             </div>
                         </details>
                     </div>
@@ -405,14 +409,14 @@
         table += "</table>";
         document.write(table);
 
-        //1부터 25까지 출력
-        let num = 0;
-        for(let i=1; i<=25; i++){
-            document.write(i);
-            num++;
-        }
-        document.write("<br>");
-        document.write(num);
+        // //1부터 25까지 출력
+        // let num = 0;
+        // for(let i=1; i<=25; i++){
+        //     document.write(i);
+        //     num++;
+        // }
+        // document.write("<br>");
+        // document.write(num);
     </script>
 </body>
 </html>
