@@ -45,19 +45,39 @@
         
         // 15칸 테이블
         let table = "<table border='1'>";
-
-        for(let i=1; i<=15; i++){
-            table += "<tr>"
-
-            for(let j=1; j<=15; j++){
-                table += "<td>"+j+"</td>"
+        let tmpNum  = 0;    
+        for(let i=1; i<=5; i++){
+            table += "<tr>";
+            for(let j=1; j<=5; j++){
+                tmpNum += 1;
+                if(tmpNum % 2 == 0){
+                    table += "<td style='color : red'>"+tmpNum+"</td>";
+                }else if(tmpNum % 2 == 1){
+                    if(tmpNum == 3){
+                        table += "<td style='background : yellow; color : blue'>"+tmpNum+"</td>";
+                    }else{
+                        table += "<td style='color : blue'>"+tmpNum+"</td>";
+                    }
+                }
             }
-
             table += "</tr>";
         }
         table +="</table>";
 
         document.write(table);
+
+
+
+        var a = [1,2,3,4,5,6,7,8,9,10];
+
+        for(let i=0; i<a.length; i++){
+            if(a[i] % 2 == 1){
+                document.write(a[i]);
+            }else if(a[i] == 2 || a[i] == 4  ){
+                document.write("A");
+            }
+
+        }
     </script>
 </body>
 </html>
