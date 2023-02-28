@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>레이아웃03 - float 유형</title>
+    <title>Document</title>
     <style>
         * {
             margin: 0;
@@ -12,6 +12,8 @@
         }
         #wrap {
             width: 100%;
+            display: flex;
+            flex-wrap: wrap;
         }
         #header {
             width: 100%;
@@ -23,25 +25,25 @@
             height: 100px;
             background-color: #B9AAA5;
         }
-        #section {
+        #main {
             width: 100%;
             height: 780px;
             background-color: #886F65;
         }
-        #article1 {
+        .article1 {
             width: 100%;
             height: 100px;
             background-color: #74574A;
         }
-        #article2 {
-            width: 100%;
-            height: 200px;
+        .article2 {
+            width: 600px;
+            height: 300px;
             background-color: #684D43;
         }
-        #article3 {
-            width: 50%;
-            height: 480px;
-            background-color: #4A352F;
+        .article3 {
+            width: 600px;
+            height: 380px;
+            background-color: #A65C44;
         }
         #footer {
             width: 100%;
@@ -50,45 +52,30 @@
         }
         .container {
             width: 1200px;
-            height: inherit;
             margin: 0 auto;
-            background-color: rgba(0, 0, 0, 0.2);
+            height: inherit;
+            background-color: rgba(0,0,0,0.2);
         }
     </style>
 </head>
 <body>
     <div id="wrap">
-        <div id="header">
+        <header id="header">
             <div class="container"></div>
-        </div>
-        <div id="nav">
+        </header>
+        <nav id="nav">
             <div class="container"></div>
-        </div>
-        <div id="section">
+        </nav>
+        <main id="main">
             <div class="container">
-                <div id="article1"></div>
-                <div id="article2"></div>
-                <div id="article3"></div>
+                <div class="article1"></div>
+                <div class="article2"></div>
+                <div class="article3"></div>
             </div>
-        </div>
-        <div id="footer">
+        </main>
+        <footer id="footer">
             <div class="container"></div>
-        </div>
+        </footer>
     </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-천설희에 메시지 보내기
-
-
-
