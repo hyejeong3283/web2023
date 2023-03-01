@@ -78,6 +78,57 @@
             }
 
         }
+
+        // 25칸(3의 배수(5의 배수 빨간색))
+
+        let table2 = "<table border='1'>";
+        let num     = 0;
+
+        for(let i=1; i<=5; i++){
+            table2 +="<tr>";
+
+            for(let j=1; j<=5; j++){
+                num +=3;
+                if(num % 5 == 0){
+                    table2 +="<td style='color : red'>"+num+"</td>";
+                }else{
+                    table2 +="<td>"+num+"</td>";
+                }
+                
+            }
+            table2 +="</tr>";
+        }
+        table2 += "</table>";
+        document.write(table2);
+
+    //최대공약수 
+    function chkBothNumAB(a,b){
+        //변수선언 : 데이터 저장
+        let maxNo  = 0;
+        let correct = 0;
+
+        //데이터 변경
+        if(a > b){
+            maxNo = a;
+        }else{
+            maxNo = b;
+        }
+
+        //최대값만큼 for문 실행
+        for(let i = 1; i <= maxNo; i++){
+            //두 값을 나눴을때 둘 다 0으로 떨어지는 경우 최대공약수 변수에 값을 저장
+            if(a%i==0 && b%i==0){ 
+                correct = i; //최대공약수 값 저장 실행
+            }
+
+        }
+
+        //반환해주는 값
+        return document.write("입력받은 두 수의 최대공약수는 : "+ correct + "입니다.<br>");
+    }
+
+    chkBothNumAB(28,68);
+    chkBothNumAB(55,100);
     </script>
 </body>
 </html>
