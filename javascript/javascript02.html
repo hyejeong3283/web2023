@@ -494,7 +494,7 @@
         {
             const arr = [100,200,300,400,500];
 
-            for(let i of arr){
+            for(let i of arr){ // 배열을 뽑아냄
                 document.write(i);
             }
         }
@@ -504,7 +504,7 @@
         {
             const arr = [100,200,300,400,500];
 
-            for(let i in arr){
+            for(let i in arr){ //객체를 뽑아냄
                 document.write(arr[i]);
             }
         }
@@ -517,12 +517,13 @@
                 console.log(el);
                 console.log(i);
                 console.log(a)
-            });
-
-            num.map(function(el, i, a){ //배열
-                console.log(el);
-                console.log(i);
-                console.log(a)
+            });ㅕ
+            
+            num.map(function(el, i, a){ //값, 인덱스, 전체 순으로...
+                console.log("인덱스 : "+i);   //인덱스 : 몇번째인지 
+                console.log("값  :"+el);  //값 : 100 200 ...
+                console.log(a)    //전체
+                console.log("=============================================");
             });
         }
     </script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1~100 까지 홀수 , 짝수 합 구하기 (함수)
+        function fnSum(){
+            let jjakSu = 0;
+            let holsu  = 0;
+
+            for(let i =1; i<=100; i++){
+                if(i % 2 == 0)jjakSu+=i;
+                if(i % 2 == 1)holsu+=i;
+            }
+            document.write("짝수의 합 : "+jjakSu + "<br>");
+            document.write("홀수의 합 : "+holsu);
+
+        }
+        fnSum();
+        document.write("<br>");
+
+        //입력받은 두 수의 합 / 곱 / 차 / 나누기 를 구하시오
+        function fnWrite(a,b){
+            let sum = 0;
+            sum = a+b;
+            document.write("합 : "+sum+"<br>");
+            let minus = 0;
+            minus = a-b;
+            document.write("차 : "+minus+"<br>");
+            let gobhagi = 0;
+            gobhagi = a*b;
+            document.write("곱 : "+gobhagi+"<br>");
+            let nanugi = 0;
+            nanugi = a / b;
+            document.write("나누기 : "+nanugi+"<br>");
+            return document.write("실행완료");
+        }
+        fnWrite(9,18);
+    </script>
+</body>
+</html>
