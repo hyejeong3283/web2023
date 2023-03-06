@@ -8,6 +8,7 @@
 
     <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
     <style>
+        /* reset */
         * {
             margin: 0;
             padding: 0;
@@ -20,7 +21,9 @@
         }
         img {
             vertical-align: top;
+            width: 100%;
         }
+        /* common */
         .container {
             width: 1160px;
             margin: 0 auto;
@@ -33,6 +36,8 @@
         }
         .section {
             padding: 120px 0;
+        }
+        .section.center {
             text-align: center;
         }
         .section__h2 {
@@ -46,9 +51,10 @@
             color: #666;
             margin-bottom: 70px;
             font-weight: 300;
+            line-height: 1.5;
         }
 
-        /* image__wrap */
+        /* image__type */
         .image__inner {
             display: flex;
             justify-content: space-between;
@@ -86,7 +92,7 @@
     </style>
 </head>
 <body>
-    <section class="image__wrap section nexon">
+    <section class="image__wrap section center nexon">
         <div class="container">
             <h2 class="section__h2">반려동물</h2>
             <p class="section__desc">귀여운 반려동물들 입니다.</p>
