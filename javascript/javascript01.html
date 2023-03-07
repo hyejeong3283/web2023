@@ -653,6 +653,118 @@
                     </div>
                 </div>
                 <!-- sample18 -->
+
+                <div id="sample19" class="sample">
+                    <h3>식별자, 예약자</h3>
+                    <div class="script">
+<pre><code code class="language-js">식별자 : 변수나 함수, 프러퍼티, 함수 매개변수의 이름입니다.
+식별자 작성 방식
+1. Camel Case 방식
+: 여러 단어로 이루어질 경우. 첫 번째 단어는 모두 소문자로 작성하고, 
+그 다음 단어부터는 첫 문자만 대문자로 작성하는 방식입니다. 
+   
+numCakeDonuts
+
+2. Underscore Case 방식
+: 식별자를 이루는 단어들을 소문자로만 작성하고,
+그 단어들은 언더스코어(_)로 연결하는 방식입니다.
+
+num_cake_donuts
+
+</code></pre>
+                    </div>
+                </div>
+                <!-- sample19 -->
+
+                <div id="sample20" class="sample">
+                    <h3>연산자(전치, 후치)</h3>
+                    <div class="script">
+<pre><code code class="language-js">{
+    var score = 10;
+    ++score;  // 11
+    score++;  // 12
+    var result = score++;  // 11
+
+    console.log(result, score);
+}
+</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                12<br>
+                                13
+                            </div>
+                        </details>                   
+                    </div>
+                </div>
+                <!-- sample20 -->
+
+                <div id="sample21" class="sample">
+                    <h3>형변환, typeof</h3>
+                    <div class="script">
+<pre><code code class="language-js">{
+    // String() 문자형으로 변환
+
+    console.log(String(3));
+    console.log(String(true));
+    console.log(String(null));
+
+    // number() 숫자형으로 변환
+
+    console.log(Number("3"));
+    console.log(Number(true));
+    console.log(Number(null));
+
+    // boolean() 참 거짓으로 변환
+
+    console.log(Boolean(0)) // false가 되는 경우 (빈문자열, null, undefined, NaN)
+                            // 나머지는 true를 반환합니다.
+
+    // type of // 피연산자의 평가 전 자료형을 나타내는 문자열을 반환합니다.
+    
+    console.log(type of undeclaredVariable);
+    console.log(type of null);
+    console.log(type of true);
+    console.log(type of 27);
+    console.log(type of {});
+    console.log(typeof Symbol());
+    console.log(typeof function() {});
+
+}
+</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                // string()<br>
+                                3<br>
+                                true<br>
+                                null<br>
+                                <br>
+                                // number()<br>
+                                3<br>
+                                1<br>
+                                0<br>
+                                <br>
+                                // boolean()<br>
+                                false<br>
+                                <br>
+                                // type of<br>
+                                undefined<br>
+                                object<br>
+                                boolean<br>
+                                number<br>
+                                object<br>
+                                Symbol<br>
+                                function                               
+                            </div>
+                        </details>                   
+                    </div>
+                </div>
+                <!-- sample21 -->
             </div>
         </div>
     </main>
@@ -666,12 +778,12 @@
     <script src="assets/js/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
     <script>
-        // var score = 10;
-        // ++score;  // 11
-        // score++;  // 12
-        // var result = score++;  // 11
+        var score = 10;
+        ++score;  // 11
+        score++;  // 12
+        var result = score++;  // 11
 
-        // console.log(result, score);
+        console.log(result, score);
 
         // let hap, j ,k ,l;
         // j = k = l = 1;
