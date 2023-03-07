@@ -52,19 +52,23 @@
                     <li><a href="#">01. 변수 : 데이터 저장</a></li>
                     <li><a href="#">02. 변수 : 데이터 저장 + 데이터 변경</a></li>
                     <li><a href="#">03. 변수 : 데이터 저장 + 데이터 변경 + 데이터 추가</a></li>
-                    <li><a href="#">04. 상수 : 데이터 저장 + 데이터 변경 (X)</a></li>
-                    <li><a href="#">05. 배열 : 데이터 저장 (여러개) : 표현방법1</a></li>
-                    <li><a href="#">06. 배열 : 데이터 저장 (여러개) : 표현방법2</a></li>
-                    <li><a href="#">07. 배열 : 데이터 저장 (여러개) : 표현방법3</a></li>
-                    <li><a href="#">08. 배열 : 데이터 저장 (여러개) : 표현방법4</a></li>
-                    <li><a href="#">09. 객체 : 데이터 저장 (키와값) : 표현방법1</a></li>
-                    <li><a href="#">10. 객체 : 데이터 저장 (키와값) : 표현방법2</a></li>
-                    <li><a href="#">11. 객체 : 데이터 저장 (키와값) : 표현방법3</a></li>
-                    <li><a href="#">12. 객체 : 데이터 저장 (키와값) : 표현방법4</a></li>
-                    <li><a href="#">13. 객체 : 데이터 저장 (키와값) : 표현방법5</a></li>
-                    <li><a href="#">14. 객체 : 데이터 저장 (키와값) : 표현방법6</a></li>
-                    <li><a href="#">15. 객체 : 데이터 저장 (키와값) : 표현방법7</a></li>
-                    <li><a href="#">16. 객체 : 데이터 저장 (키와값) : 표현방법8</a></li>
+                    <li><a href="#">04. 변수 : 지역 변수 + 전역 변수(스코프)</a></li>
+                    <li><a href="#">05. 상수 : 데이터 저장 + 데이터 변경 (X)</a></li>
+                    <li><a href="#">06. 배열 : 데이터 저장 (여러개) : 표현방법1</a></li>
+                    <li><a href="#">07. 배열 : 데이터 저장 (여러개) : 표현방법2</a></li>
+                    <li><a href="#">08. 배열 : 데이터 저장 (여러개) : 표현방법3</a></li>
+                    <li><a href="#">09. 배열 : 데이터 저장 (여러개) : 표현방법4</a></li>
+                    <li><a href="#">10. 객체 : 데이터 저장 (키와값) : 표현방법1</a></li>
+                    <li><a href="#">11. 객체 : 데이터 저장 (키와값) : 표현방법2</a></li>
+                    <li><a href="#">12. 객체 : 데이터 저장 (키와값) : 표현방법3</a></li>
+                    <li><a href="#">13. 객체 : 데이터 저장 (키와값) : 표현방법4</a></li>
+                    <li><a href="#">14. 객체 : 데이터 저장 (키와값) : 표현방법5</a></li>
+                    <li><a href="#">15. 객체 : 데이터 저장 (키와값) : 표현방법6</a></li>
+                    <li><a href="#">16. 객체 : 데이터 저장 (키와값) : 표현방법7</a></li>
+                    <li><a href="#">17. 객체 : 데이터 저장 (키와값) : 표현방법8</a></li>
+                    <li><a href="#">++ 식별자, 예약자</a></li>
+                    <li><a href="#">++ 연산자(전치, 후치)</a></li>
+                    <li><a href="#">++ 형변환, typeof</a></li>
                 </ul>
                 <ul>
                     <li>형변화, typeof()</li>
@@ -159,15 +163,50 @@
                             </div>
                         </details>                                                  
                     </div> 
-                    <div class="notice">
-                        <h4>연산자 : 변수로 연산이 가능하다.</h4>
-                        <p>변수를 이용해서 연산이 가능하고, 연산에는 산술 연산자, 대입 연산자, 비교 연산자, 논리 연산자, 비트 연산자, 삼항 연산자가 있다.</p>
-                    </div>
                 </div>
                 <!-- //sample03 -->
-                
+
                 <div id="sample04" class="sample">
-                    <h3>04. 상수 : 데이터 저장 + 데이터 변경(X)</h3>
+                    <h3>04. 변수 : 지역 변수 + 전역 변수(스코프)</h3>
+                    <p>변수는 데이터를 저장하고, 변경하고, 추가할 수 있습니다</p>
+                    <div class="script">
+<pre><code code class="language-js">{
+    let x = 100;    // 전역 변수
+        let y = 200;    // 전역 변수
+
+        function func(){
+            x = 300;    // 전역 변수
+            let y = 400;    // 지역 변수
+            z = "javascript";
+
+            console.log("함수안"+x); //300
+            console.log("함수안"+y); //400
+            console.log("함수안"+z);
+        }
+        func();
+
+        console.log("함수밖"+x); //300
+        console.log("함수밖"+y); //200
+}
+</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                300<br>
+                                400<br>
+                                javascript<br>
+                                300<br>
+                                200
+                            </div>
+                        </details>                                                  
+                    </div> 
+                </div>
+                <!-- //sample04 -->
+                
+                <div id="sample05" class="sample">
+                    <h3>05. 상수 : 데이터 저장 + 데이터 변경(X)</h3>
                     <p>상수는 데이터 저장은 가능하나 변경은 불가능합니다. 상수 (const)는 이미 선언한 상수에 대해 중복 선언이 불가능하며 상수의 값을 재지정 할 수도 없습니다.</p>
                     <div class="script">
 <pre><code code class="language-js">{
@@ -194,51 +233,10 @@
                         </details>                   
                     </div>
                 </div>
-                <!-- sample04 -->
-
-                <div id="sample05" class="sample">
-                    <h3>연산자</h3>
-                    <div class="script">
-<pre><code code class="language-js">{
-    const a = 10000;
-    const b = 20000;
-    
-    // 연산자
-    console.log(a + b)
-    console.log(a - b)
-    console.log(a &gt; b)
-    console.log(a * b)
-    console.log(a / b)
-    console.log(a % b)
-
-    let c = 10;
-    c = "100"
-    c = 1000;
-    c += 1000;
-
-    console.log(c)
-}
-</code></pre>
-                    </div>
-                    <div class="result">
-                        <details>
-                            <summary>결과 확인하기</summary>
-                            <div>
-                                30000<br>
-                                -10000<br>
-                                false<br>
-                                200000000<br>
-                                0.5<br>
-                                10000<br>
-                                2000
-                            </div>
-                        </details>                   
-                    </div>
-                </div>
                 <!-- sample05 -->
 
                 <div id="sample06" class="sample">
-                    <h3>05. 배열 : 데이터 저장 (여러개) : 표현방법1</h3>
+                    <h3>06. 배열 : 데이터 저장 (여러개) : 표현방법1</h3>
                     <p>여러개의 데이터를 저장할 수 있다.</p>
                     <div class="script">
 <pre><code code class="language-js">{
@@ -267,7 +265,7 @@
                 <!-- sample06 -->
                 
                 <div id="sample07" class="sample">
-                    <h3>06. 배열 : 데이터 저장 (여러개) : 표현방법2</h3>
+                    <h3>07. 배열 : 데이터 저장 (여러개) : 표현방법2</h3>
                     <p>여러개의 데이터를 저장할 수 있다.</p>
                     <div class="script">
 <pre><code code class="language-js">{
@@ -293,7 +291,7 @@
                 <!-- sample07 -->
 
                 <div id="sample08" class="sample">
-                    <h3>07. 배열 : 데이터 저장 (여러개) : 표현방법3</h3>
+                    <h3>08. 배열 : 데이터 저장 (여러개) : 표현방법3</h3>
                     <p>[ ]를 사용하여 데이터를 저장할 수 있다.</p>
                     <div class="script">
 <pre><code code class="language-js">{
@@ -322,7 +320,7 @@
                 <!-- sample08 -->
 
                 <div id="sample09" class="sample">
-                    <h3>08. 배열 : 데이터 저장 (여러개) : 표현방법4</h3>
+                    <h3>09. 배열 : 데이터 저장 (여러개) : 표현방법4</h3>
                     <p>[ ]를 사용하여 간략히 데이터를 저장할 수 있다.</p>
                     <div class="script">
 <pre><code code class="language-js">{
@@ -348,7 +346,7 @@
                 <!-- sample09 -->
 
                 <div id="sample10" class="sample">
-                    <h3>09. 객체 : 데이터 저장(키와 값) : 표현방법1</h3>
+                    <h3>10. 객체 : 데이터 저장(키와 값) : 표현방법1</h3>
                     <p>객체 안에 여러개의 키와 값을 저장할 수 있다.</p>
                     <div class="script">
 <pre><code code class="language-js">{
@@ -377,7 +375,7 @@
                 <!-- sample10 -->
 
                 <div id="sample11" class="sample">
-                    <h3>10. 객체 : 데이터 저장(키와 값) : 표현방법2</h3>
+                    <h3>11. 객체 : 데이터 저장(키와 값) : 표현방법2</h3>
                     <p>객체 안에 여러개의 키와 값을 저장할 수 있다.</p>
                     <div class="script">
 <pre><code code class="language-js">{
@@ -406,7 +404,7 @@
                 <!-- sample11 -->
 
                 <div id="sample12" class="sample">
-                    <h3>11. 객체 : 데이터 저장(키와 값) : 표현방법3</h3>
+                    <h3>12. 객체 : 데이터 저장(키와 값) : 표현방법3</h3>
                     <p>{ }를 사용하여 표현할 수 있다.</p>
                     <div class="script">
 <pre><code code class="language-js">{
@@ -435,7 +433,7 @@
                 <!-- sample12 -->
 
                 <div id="sample13" class="sample">
-                    <h3>12. 객체 : 데이터 저장(키와 값) : 표현방법4</h3>
+                    <h3>13. 객체 : 데이터 저장(키와 값) : 표현방법4</h3>
                     <p>{ }를 사용하여 간략히 데이터를 저장할 수 있다.</p>
                     <div class="script">
 <pre><code code class="language-js">{
@@ -461,7 +459,7 @@
                 <!-- sample13 -->                                                                     
 
                 <div id="sample14" class="sample">
-                    <h3>13. 객체 : 데이터 저장 (키와값) : 표현방법5</h3>
+                    <h3>14. 객체 : 데이터 저장 (키와값) : 표현방법5</h3>
                     <p>배열 안에 객체가 있는 방법</p>
                     <div class="script">
 <pre><code code class="language-js">{
@@ -491,7 +489,7 @@
                 <!-- sample14 -->
 
                 <div id="sample15" class="sample">
-                    <h3>14. 객체 : 데이터 저장 (키와값) : 표현방법6</h3>
+                    <h3>15. 객체 : 데이터 저장 (키와값) : 표현방법6</h3>
                     <p>객체 안에 배열</p>
                     <div class="script">
 <pre><code code class="language-js">{
@@ -529,7 +527,7 @@
                 <!-- sample15 -->
 
                 <div id="sample16" class="sample">
-                    <h3>15. 객체 : 데이터 저장 (키와값) : 표현방법7</h3>
+                    <h3>16. 객체 : 데이터 저장 (키와값) : 표현방법7</h3>
                     <p>키값은 생략되어 있다.</p>
                     <div class="script">
 <pre><code code class="language-js">{
@@ -559,7 +557,7 @@
                 <!-- sample16 -->
 
                 <div id="sample17" class="sample">
-                    <h3>16. 객체 : 데이터 저장 (키와값) : 표현방법8</h3>
+                    <h3>17. 객체 : 데이터 저장 (키와값) : 표현방법8</h3>
                     <p>객체 안에 실행문(함수)가 들어갈 수 있다.</p>
                     <div class="script">
 <pre><code code class="language-js">{
@@ -610,6 +608,51 @@
                     </div>
                 </div>
                 <!-- sample17 -->
+
+                <div id="sample18" class="sample">
+                    <h3>연산자</h3>
+                    <div class="script">
+<pre><code code class="language-js">{
+    const a = 10000;
+    const b = 20000;
+    
+    // 연산자
+    console.log(a + b)
+    console.log(a - b)
+    console.log(a &gt; b)
+    console.log(a * b)
+    console.log(a / b)
+    console.log(a % b)
+
+    let c = 10;
+    c = "100"
+    c = 1000;
+    c += 1000;
+
+    console.log(c)
+}
+</code></pre>
+                    </div>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                30000<br>
+                                -10000<br>
+                                false<br>
+                                200000000<br>
+                                0.5<br>
+                                10000<br>
+                                2000
+                            </div>
+                        </details>                   
+                    </div>
+                    <div class="notice">
+                        <h4>연산자 : 변수로 연산이 가능하다.</h4>
+                        <p>변수를 이용해서 연산이 가능하고, 연산에는 산술 연산자, 대입 연산자, 비교 연산자, 논리 연산자, 비트 연산자, 삼항 연산자가 있다.</p>
+                    </div>
+                </div>
+                <!-- sample18 -->
             </div>
         </div>
     </main>
@@ -623,133 +666,75 @@
     <script src="assets/js/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
     <script>
-        //00. 객체 : 데이터 저장 (키와값) : 표현방법1
-        // 객체는 배열 방식을 그대로 사용할 수 있다.
-        {
-            const obj = new Object();
+        // var score = 10;
+        // ++score;  // 11
+        // score++;  // 12
+        // var result = score++;  // 11
 
-            obj [0] = 100;
-            obj [1] = 200;
-            obj [2] = "javascript";
+        // console.log(result, score);
 
-            console.log(obj [0]);
-            console.log(obj [1]);
-            console.log(obj [2]);
+        // let hap, j ,k ,l;
+        // j = k = l = 1;
+        // hap = ++j + k++ + ++l;
+
+        // console.log(hap); //5
+        // console.log(j);  //2
+        // console.log(k);  //2
+        // console.log(l);  //2
+
+        // let sum = 0;
+
+        // for(let i=0; i<10; i++){
+        //     sum += i
+        // }
+
+        // for(let i=10; i>0; i--){
+        //     sum += i
+        // }
+
+        // let a = 1, b = 2, c = 3, result;
+        // result = ++a + b++ + ++C;
+
+        // console.log(result);
+        // console.log(a);
+        // console.log(b);
+        // console.log(c);
+
+        // let x = 7, y = 7, result;
+
+        // result = x > y ? ++x : y--;
+
+        // console.log(result); //7
+        // console.log(x); //7
+        // console.log(y); //6
+
+        // let a, b, c, result;
+        // a = 20, b = 30, c = 30;
+
+        // result = a < b ? b++ : --C;
+
+        // console.log(result); //30
+        // console.log(a);  //20
+        // console.log(b + c);  //31+30=61
+        // console.log(c);  //30
+
+        //04. 변수 : 지역 변수 + 전역 변수(스코프)
+        let x = 100;    // 전역 변수
+        let y = 200;    // 전역 변수
+
+        function func(){
+            x = 300;    // 전역 변수
+            let y = 400;    // 지역 변수
+            z = "javascript";
+
+            console.log("함수안"+x); //300
+            console.log("함수안"+y); //400
+            console.log("함수안"+z);
         }
+        func();
 
-        //00. 객체 : 데이터 저장 (키와값) : 표현방법2
-        {
-            const obj = new Object();
-
-            obj.a = 100;
-            obj.b = 200;
-            obj.c = "javascript";
-
-            console.log (obj.a);
-            console.log (obj.b);
-            console.log (obj.c);
-        }
-        //00. 객체 : 데이터 저장 (키와값) : 표현방법3
-        {
-            const obj = {};
-
-            obj.a = 100;
-            obj.b = 200;
-            obj.c = "javascript";
-
-            console.log (obj.a);
-            console.log (obj.b);
-            console.log (obj.c);
-        }
-        //00. 객체 : 데이터 저장 (키와값) : 표현방법4
-        {
-            const obj = {a:100, b:200, c:"javascript"};
-
-            console.log (obj.a);
-            console.log (obj.b);
-            console.log (obj.c);
-        }
-        //00. 객체 : 데이터 저장 (키와값) : 표현방법5 : 배열 안에 객체가 있는 방법
-        // 배열 안에 객체를 불러옵니다.
-        {
-            const obj = [
-                {a:100, b:200}, 
-                {c:"javascript"}
-            ];
-            
-            console.log(obj[0].a);
-            console.log(obj[0].b);
-            console.log(obj[1].c);
-
-            //100
-            //200
-            //javascript
-        }
-        //00. 객체 : 데이터 저장 (키와값) : 표현방법6 : 객체 안에 배열
-        {
-            const obj = {
-                a: 100,
-                b: [200, 300],
-                c: {x: 400, y: 500},
-                d: "javascript"
-            }
-
-            console.log(obj.a);
-            console.log(obj.b[0]);
-            console.log(obj.b[1]);
-            console.log(obj.c.x);
-            console.log(obj.c.y);
-            console.log(obj.d);
-
-            //100
-            //200
-            //300
-            //400
-            //500
-            //javascript
-        }
-        //00. 객체 : 데이터 저장 (키와값) : 표현방법7
-        // 키값은 생략되어 있다.
-        {
-            const a = 100;
-            const b = 200;
-            const c = "javascript";
-
-            const obj = {a, b, c};
-
-            console.log(a);
-            console.log(b);
-            console.log(c);
-        }
-        //00. 객체 : 데이터 저장 (키와값) : 표현방법8
-        {
-            const j = "javascript";
-
-            const obj = {
-                a: 100,
-                b: [200, 300],
-                c: "javascript",
-                d: function(){
-                    console.log("javascript가 실행되었습니다.");
-                },
-                e: function(){
-                    console.log(j + "가 실행되었습니다.");
-                },
-                f: function(){
-                    console.log(this.c + "가 실행되었습니다.");
-                }
-            }
-
-            console.log(obj.a);
-            console.log(obj.b[0]);
-            console.log(obj.b[1]);
-            console.log(obj.b[2]); //indefined
-            console.log(obj.c);
-            console.log(obj.d);//(X)
-            obj.d();
-            obj.e();
-            obj.f();
-        }
+        console.log("함수밖"+x); //300
+        console.log("함수밖"+y); //200
     </script>
 </body>
 </html>
