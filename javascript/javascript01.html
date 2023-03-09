@@ -686,15 +686,28 @@ num_cake_donuts
                 <!-- sample19 -->
 
                 <div id="sample20" class="sample">
-                    <h3>연산자(전치, 후치)</h3>
+                    <h3>연산자(전치, 후치), 비트연산자</h3>
                     <div class="script">
 <pre><code code class="language-js">{
+    // 연산자(전치, 후치)
     var score = 10;
     ++score;  // 11
     score++;  // 12
     var result = score++;  // 11
 
     console.log(result, score);
+
+    // 비트연산자
+    let a = 9;
+    let b = 11;
+    let c = a^b;
+
+    console.log(c) //2
+
+    let num1 = 16, num2 = 80;
+    let result;
+
+    result = num1 &gt; num2 ? num1 & num2 : num1 ^ num2; //64 
 }
 </code></pre>
                     </div>
@@ -702,10 +715,29 @@ num_cake_donuts
                         <details>
                             <summary>결과 확인하기</summary>
                             <div>
-                                12<br>
-                                13
+                                12   13<br>
+                                2<br>
+                                64
                             </div>
                         </details>                   
+                    </div>
+                    <div class="notice">
+                        <h4>연산자(전치, 후치)</h4>
+                        <p>연산자 기호(++, --)가 앞에 있으면 전치, 뒤에 있으면 후치가 되는 것입니다. a++ 나 ++a 둘 다 "a 값에 1씩 더한다"는 개념입니다.
+                            다만, 증가(++) 및 감소(--)의 시점에 따라 연산을 수행하는 방식이 다릅니다.<br>
+                            전치 : 변수를 참조하기 전에 제일 먼저 연산을 수행합니다<br>
+                            후치 : 변수를 참조한 이후에 연산을 수행합니다.
+                        </p>
+                        <br>
+                        <h4>비트 연산자는 정수 타입의 데이터를 2진수로 계산하는 연산자입니다.</h4>
+                        <p>AND(&) : 둘 다 1일 때 결과가 1이고, 하나라도 1이 아니면 결과가 0이다.<br>
+                            OR(|) : 둘 중 하나라도 1이면 결과가 1이다. 둘다 0일때만 결과가 0이다.<br>
+                            XOR(^) : 비트값이 서로 다를때 결과가 1이다.<br>
+                            NOT(~) : 비트부정연산자, 비트값이 1이면 0으로, 0이면 1로 변환한다.<br>
+                            &lt;&lt; : 이동연산자, 왼쪽으로 바로 이동 후 이동된 곳은 0으로 채운다.<br>
+                            &gt;&gt; : 이동연산자, 오른쪽으로 바로 이동 후 이동된 곳은 해당 부호 비트로 채운다.<br>
+                            &gt;&gt;&gt; : 이동연산자, 오른쪽으로 바로 이동 후 이동된 곳은 무조건 0으로 채운다.<br>
+                        </p>
                     </div>
                 </div>
                 <!-- sample20 -->
@@ -774,6 +806,7 @@ num_cake_donuts
                     </div>
                 </div>
                 <!-- sample21 -->
+
             </div>
         </div>
     </main>
@@ -901,20 +934,20 @@ num_cake_donuts
         //     console.log(a) //16
         // }
 
-        // {
-        //     let a = 9;
-        //     let b = 11;
-        //     let c = a^b;
+        {
+            let a = 9;
+            let b = 11;
+            let c = a^b;
 
-        //     console.log(c) //2
-        // }
+            console.log(c) //2
+        }
 
-        // {
-        //     let num1 = 16, num2 = 80;
-        //     let result;
+        {
+            let num1 = 16, num2 = 80;
+            let result;
 
-        //     result = num1 > num2 ? num1 & num2 : num1 ^ num2; //64 
-        // }
+            result = num1 > num2 ? num1 & num2 : num1 ^ num2; //64 
+        }
     </script>
 </body>
 </html>
