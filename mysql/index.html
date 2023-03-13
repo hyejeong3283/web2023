@@ -136,7 +136,7 @@
                         윈도우 : cd MAMP/bin/mysql/bin<br>
                         로그인 : mysql -uroot -proot
                     </div>
-<pre><code class="Language-js">
+<pre><code class="language-js">
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 3
 Server version: 5.7.24 MySQL Community Server (GPL)
@@ -153,31 +153,97 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
                     <h3 id="intro4" class="page-header">데이터 베이스</h3>
 
                     <h4 id="intro4-1" class="page-header">데이터 베이스 보기</h4>
-                    <div class="bs-callout bs-callout-info">show databases;</div>
-<pre><code class="Language-js">
-
-    
+                    <div class="bs-callout bs-callout-info">show database;</div>
+<pre><code class="language-js">
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.02 sec)  
 </code></pre>
 
                     <h4 id="intro4-2" class="page-header">데이터 베이스 만들기</h4>
                     <div class="bs-callout bs-callout-info">create database 데이터베이스 이름;</div>
-<pre><code class="Language-js">
+<pre><code class="language-js">
+Query OK, 1 row affected (0.00 sec)
 
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sample01           |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
 </code></pre>
 
                     <h4 id="intro4-3" class="page-header">데이터 베이스 사용</h4>
-                    <div class="bs-callout bs-callout-info"></div>
-<pre><code class="Language-js">
-
+                    <div class="bs-callout bs-callout-info">use 데이터베이스 이름;</div>
+<pre><code class="language-js">mysql> use sample01;
+Database changed
 </code></pre>
                     
                     <h4 id="intro4-4" class="page-header">데이터 베이스 삭제</h4>
-                    <div class="bs-callout bs-callout-info"></div>
-<pre><code class="Language-js">
+                    <div class="bs-callout bs-callout-info">drop database 데이터베이스 이름;</div>
+<pre><code class="language-js">
+Query OK, 0 rows affected (0.02 sec)
 
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.00 sec)
 </code></pre>
                     
                 </div>
+                <!-- //intro4 -->
+
+                <div class="bs-docs-section">
+                    <h3 id="intro5" class="page-header">테이블</h3>
+                    <4 id="intro5-1" class="page-header">테이블 만들기</4>
+                    <div class="bs-callout bs-callout-info"></div>
+<pre><code class="language-js">
+    
+</code></pre>
+
+                    <4 id="intro5-2" class="page-header">테이블 전체 보기</4>
+                    <div class="bs-callout bs-callout-info"></div>
+<pre><code class="language-js">
+
+</code></pre>
+
+                    <4 id="intro5-3" class="page-header">테이블 보기</4>
+                    <div class="bs-callout bs-callout-info"></div>
+<pre><code class="language-js">
+
+</code></pre>
+
+                    <4 id="intro5-4" class="page-header">테이블 삭제</4>
+                    <div class="bs-callout bs-callout-info"></div>
+<pre><code class="language-js">
+
+</code></pre>
+
+                    <4 id="intro5-5" class="page-header">테이블 복사</4>
+                    <div class="bs-callout bs-callout-info"></div>
+<pre><code class="language-js">
+
+</code></pre>
+
+                </div>
+                <!-- //intro5 -->
             </div>
             <div class="col-md-3">
                 <div class="bs-sidebar hidden-print affix-top" role="complementary">
@@ -191,6 +257,15 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
                                 <li><a href="#intro4-2">데이터 베이스 만들기</a></li>
                                 <li><a href="#intro4-3">데이터 베이스 사용</a></li>
                                 <li><a href="#intro4-4">데이터 베이스 삭제</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#intro5">테이블</a>
+                            <ul class="nav bs-sidenav">
+                                <li><a href="#intro5-1">테이블 만들기</a></li>
+                                <li><a href="#intro5-2">테이블 전체 보기</a></li>
+                                <li><a href="#intro5-3">테이블 보기</a></li>
+                                <li><a href="#intro5-4">테이블 삭제</a></li>
+                                <li><a href="#intro5-5">테이블 복사</a></li>
                             </ul>
                         </li>
                     </ul>
