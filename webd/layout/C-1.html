@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃(C-1)</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+        #wrap {
+            display: flex;
+            width: 1000px;
+        }
+        #header {
+            width: 200px;
+            height: 650px;
+        }
+        #header .logo {
+            width: 100%;
+            height: 20%;
+            background-color: #f5dbdb;
+        }
+        #header .nav {
+            width: 100%;
+            height: 80%;
+            background-color: #f6bcbc;
+        }
+        #section {
+            width: 800px;
+            height: 650px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        #section .slider {
+            width: 100%;
+            height: 350px;
+            background-color: #c78989;
+        }
+        #section .article {
+            width: 100%;
+            height: 200px;
+            display: flex;
+        }
+        #section .article .cont1{
+            width: 33.3333%;
+            height: 200px;
+            background-color: #bc5a5a;
+        }
+        #section .article .cont2{
+            width: 33.3333%;
+            height: 200px;
+            background-color: #d05555;
+        }
+        #section .article .cont3{
+            width: 33.3333%;
+            height: 200px;
+            background-color: #9d3f3f;
+        }
+        #footer {
+            width: 800px;
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }       
+        #footer .foot1 {
+            width: 20%;
+            height: 100px;
+            background-color: #cc2222;
+        }       
+        #footer .foot2 {
+            width: 80%;
+            height: 50px;
+            background-color: #e71b1b;
+        }       
+        #footer .foot3 {
+            width: 80%;
+            height: 50px;
+            background-color: #ad1111;
+        }       
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="logo">로고</div>
+            <div class="nav">메뉴</div>
+        </div>
+        <div id="section">
+            <div class="slider">이미지 슬라이드</div>
+            <div class="article">
+                <div class="cont1">공지사항</div>
+                <div class="cont2">배너</div>
+                <div class="cont3">바로가기</div>
+            </div>
+            <div id="footer">
+                <div class="foot1">로고</div>
+                <div class="foot2">하단메뉴</div>
+                <div class="foot3">Copyright</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

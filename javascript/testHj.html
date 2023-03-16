@@ -8,56 +8,90 @@
 </head>
 <body>
     <script>
-        // //1~100 까지 홀수 , 짝수 합 구하기 (함수)
-        // function fnSum(){
-        //     let jjakSu = 0;
-        //     let holsu  = 0;
-
-        //     for(let i =1; i<=100; i++){
-        //         if(i % 2 == 0)jjakSu+=i;
-        //         if(i % 2 == 1)holsu+=i;
-        //     }
-        //     document.write("짝수의 합 : "+jjakSu + "<br>");
-        //     document.write("홀수의 합 : "+holsu);
-
-        // }
-        // fnSum();
-        // document.write("<br>");
-
-        // //입력받은 두 수의 합 / 곱 / 차 / 나누기 를 구하시오
-        // function fnWrite(a,b){
-        //     let sum = 0;
-        //     sum = a+b;
-        //     document.write("합 : "+sum+"<br>");
-        //     let minus = 0;
-        //     minus = a-b;
-        //     document.write("차 : "+minus+"<br>");
-        //     let gobhagi = 0;
-        //     gobhagi = a*b;
-        //     document.write("곱 : "+gobhagi+"<br>");
-        //     let nanugi = 0;
-        //     nanugi = a / b;
-        //     document.write("나누기 : "+nanugi+"<br>");
-        //     return document.write("실행완료");
-        // }
-        // fnWrite(9,18);
-
-    //     const obj = {
-    //     a: 100,
-    //     b: 200,
-    //     c: "javascript"
-    // }
-    // const { a:name1, b:name2, c:name3 } = obj;
-
-    // document.write(name1);
-    // document.write(name2);
-    // document.write(name3);
-
-    let a = 0;
-    let b = 0;
-    
-    document.write(a++);
-    document.write(++b);
+        // 선언적 함수
+        {
+            function func(){
+                document.write("실행되었습니다.1<br>");
+            }
+            func();
+        }
+        // 익명 함수
+        {
+            const func = function(){
+                document.write("실행되었습니다.2<br>");
+            }
+            func();
+        }      
+        // 매개변수 함수
+        {
+            function func(str){
+                document.write(str);
+            }
+            func("실행되었습니다.3<br>")
+        }      
+        // 리턴값 함수
+        {
+            function func(){
+                const str = "실행되었습니다.4<br>";
+                return str;
+            }
+            document.write(func());
+        }    
+        // 선언적 함수 (화살표함수)
+        {
+            func = () => {
+                document.write("실행되었습니다.5<br>");
+            }
+            func();
+        }   
+        // 익명 함수 (화살표함수)
+        {
+            const func = () => {
+                document.write("실행되었습니다.6<br>");
+            }
+            func();
+        }      
+        // 매개변수 함수 (화살표함수)
+        {
+            func = (str) => {
+                document.write(str);
+            }
+            func("실행되었습니다.7<br>");
+        }       
+        // 리턴값 함수 (화살표함수)
+        {
+            func = () => {
+                const str = "실행되었습니다.8<br>";
+                return str;
+            }
+            document.write(func());
+        }    
+        // 익명함수 + 매개변수 + 리턴값(화살표함수)
+        {
+            const func = (str) => {
+                return str;
+            }
+            document.write(func("실행되었습니다.9<br>"));
+        }        
+        // 익명함수 + 매개변수 + 리턴값 + 괄호생략(화살표함수)
+        {
+            const func = str => {
+                return str;
+            }
+            document.write(func("실행되었습니다.10<br>"));
+        }       
+        // 익명함수 + 매개변수 + 리턴값 + 괄호생략 + 리턴생략(화살표함수)
+        {
+            const func = str => str;
+            
+            document.write(func("실행되었습니다.11<br>"));
+        }         
+        // 선언적 함수 + 매개변수 + 리턴값 + 괄호생략 + 리턴생략(화살표함수)
+        {
+            func = str => str;
+            
+            document.write(func("실행되었습니다.12<br>"));
+        }
     </script>
 </body>
 </html>
