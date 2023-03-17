@@ -1002,9 +1002,11 @@
                     com: "실행"
                 }
             ];
+
             function func(num, str1, str2){
                 document.write(`${num}. ${str1}가 ${str2}되었습니다.<br>`);
             }
+
             func(info[0].num, info[0].name, info[0].com);
             func(info[1].num, info[1].name, info[1].com);
             func(info[2].num, info[2].name, info[2].com);
@@ -1039,7 +1041,7 @@
             // 1. 함수가 실행되었습니다.
         }
 
-        // 21. 함수 유향 : 객체 생성자 함수
+        // 19. 함수 유형 : 객체 생성자 함수
         {
             function func(num, name, com){
                 this.num = num;
@@ -1068,6 +1070,7 @@
                 this.name = name;
                 this.com = com;
             };
+
             func.prototype.result = function(){
                 document.write(`${this.num}. ${this.name}가 ${this.com}되었습니다.<br>`);
             }
