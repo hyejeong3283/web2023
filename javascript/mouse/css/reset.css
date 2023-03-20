@@ -1,0 +1,78 @@
+@import url('https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css');
+@import url('https://webfontworld.github.io/score/SCoreDream.css');
+@import url('https://webfontworld.github.io/suncheon/Suncheon.css');
+@import url('https://webfontworld.github.io/hallym/Hallym.css');
+@import url('https://webfontworld.github.io/busan/Busan.css');
+@import url('https://webfontworld.github.io/wando/WandoCleanSea.css');
+@import url('https://webfontworld.github.io/utoBalsamtint/UtoBalsamTint.css');
+@import url('https://webfontworld.github.io/eulyoo/Eulyoo1945.css');
+@import url('https://webfontworld.github.io/mapo/MapoDPP.css');
+@import url('https://webfontworld.github.io/woori/Wooridaum.css');
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+li, ul, ol {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+    width: 100%;
+}
+em {
+    font-style: normal;
+}
+.Nexon {
+    font-family: 'NexonLv1Gothic';
+    font-weight: 300;
+}
+.Score {
+    font-family: 'SCoreDream';
+    font-weight: 300;
+}
+.Suncheon {
+    font-family: 'Suncheon';
+    font-weight: 300;
+}
+.Hallym {
+    font-family: 'Hallym';
+    font-weight: 300;
+}
+.Busan {
+    font-family: 'Busan';
+    font-weight: 300;
+}
+.Wando {
+    font-family: 'WandoCleanSea';
+    font-weight: 300;
+}
+.UtoBalsamtint {
+    font-family: 'UtoBalsamTint';
+    font-weight: 300;
+}
+.Eulyoo {
+    font-family: 'Eulyoo1945';
+    font-weight: 300;
+}
+.Mapo {
+    font-family: 'MapoDPP';
+    font-weight: 300;
+}
+.Woori {
+    font-family: 'Wooridaum';
+    font-weight: 300;
+}
