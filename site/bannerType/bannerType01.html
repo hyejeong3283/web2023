@@ -80,11 +80,23 @@
             line-height: 1.5;
         }
         .banner__wrap {
+            background-image: #10100E;
+            height: 500px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 10;
+        }
+        .banner__wrap::before {
+            content: '';
+            position: absolute;
+            left: 0;
             top: 0;
             height: 100%;
             width: 100%;
+            background-image: url(../asset/img/bannerType01.jpg);
             background-repeat: no-repeat;
             background-position: center;
+            /* background-size: cover; */
             z-index: -1;
         }
         .banner__inner {
