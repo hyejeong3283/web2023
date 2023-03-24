@@ -91,7 +91,6 @@
                     <div class="notice">"문자열".includes(검색값, [위치값])</div>                
                     <ul>
                         <li>문자열 포함 여부를 검색하여, 불린(true, false)을 반환합니다.</li>
-                        <li>문자열을 검색하여, 주어진 값과 일치하는 것이 없으면 -1을 반환합니다.</li>
                         <li>대소문자를 구별합니다.</li>
                     </ul>                  
                     <div class="script">
@@ -165,7 +164,7 @@
 
                 <div id="sample10" class="sample">
                     <h3>10. match()</h3>  
-                    <div class="notice">"문자열".match(검색값, [위치값])</div>                
+                    <div class="notice">"문자열".match(검색값)<br>"문자열".match(정규식표현)</div>                
                     <ul>
                         <li>문자열(정규식)을 검색하고, 문자열(배열)을 반환합니다.</li>
                         <li>문자열을 검색하여, 주어진 값과 일치하는 것이 없으면 null을 반환합니다.</li>
@@ -196,7 +195,7 @@
 
                 <div id="sample18" class="sample">
                     <h3>18. search()</h3>  
-                    <div class="notice">"문자열".indexOf(검색값)<br>"문자열".search(정규식표현)</div>                
+                    <div class="notice">"문자열".search(검색값)<br>"문자열".search(정규식표현)</div>                
                     <ul>
                         <li>문자열(정규식)을 검색하고, 위치값(숫자)을 반환합니다.</li>
                         <li>문자열을 검색하여, 주어진 값과 일치하는 것이 없으면 -1을 반환합니다.</li>
@@ -252,6 +251,5 @@
 
         console.log("javascipt reference".lastIndexOf("javascript"));
     </script>
-
 </body>
 </html>

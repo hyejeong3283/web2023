@@ -87,6 +87,9 @@ body {
     padding-bottom: 40px;
     border-bottom: 1px dashed #dcdcdc;
 }
+.main__menu li:hover strong::before {
+    height: 100%;
+}
 .main__menu li {
     line-height: 2;
 }
@@ -181,8 +184,8 @@ body {
 }
 .main__sample li::before {
     content: '';
-    width:53px;
-    height: 3px;
+    width: 5px;
+    height: 5px;
     background-color: #0243f1;
     position: absolute;
     left: 0;
