@@ -82,13 +82,6 @@
                 </div>
             </div> -->            
         </div>
-        <div class="quiz__modal">
-            <div class="modal">
-                <h3>[축하합니다] or [다시 공부하세요]!</h3>
-                <p>총 몇 [60]문제 중에 [10]문제 맞췄습니다.</p>
-                <p>[40]점입니다. 공부하세요!</p>
-            </div>
-        </div>
     </main>
     <!-- //main -->
 
@@ -288,10 +281,10 @@
                 infoNumber: "20050515",
                 infoQuestion: "아래 게이트 기호를 논리식으로 바르게 표현한 것은?<br><img style='width:300px', src=../assets/img/quiz05_15.png>",
                 infoChoice: {
-                    1: "<img style='width:300px', src=../assets/img/quiz05_15.1.png>",
-                    2: "<img style='width:300px', src=../assets/img/quiz05_15.2.png>",
+                    1: "<img style='width:100px', src=../assets/img/quiz05_15.1.png>",
+                    2: "<img style='width:100px', src=../assets/img/quiz05_15.2.png>",
                     3: "A + B + C",
-                    4: "<img style='width:300px', src=../assets/img/quiz05_15.4.png>"
+                    4: "<img style='width:100px', src=../assets/img/quiz05_15.4.png>"
                 },
                 infoAnswer: "3",
                 infoDesc: "A OR B 한 데이터와 C' 한 데이터를 AND 시켜 줍니다..(A + B)C' 입니다. "
@@ -327,9 +320,9 @@
                 infoNumber: "20050518",
                 infoQuestion: "다음 중 불(Boolean) 대수의 정리로 옳지 않은 것은?",
                 infoChoice: {
-                    1: "<img style='width:300px', src=../assets/img/quiz05_18.1.png>",
+                    1: "<img style='width:100px', src=../assets/img/quiz05_18.1.png>",
                     2: "A + 0 = 0",
-                    3: "<img style='width:300px', src=../assets/img/quiz05_18.3.png>",
+                    3: "<img style='width:90px', src=../assets/img/quiz05_18.3.png>",
                     4: "A + A = A"
                 },
                 infoAnswer: "2",
@@ -948,8 +941,8 @@
                 `);
             });
             exam.push(`
-                <div class="quiz__info">??점</div>
-                <div class="quiz__check">정답 확인!</div>
+                <div class="quiz__info">❔❔점</div>
+                <div class="quiz__check">🍒정답 확인🍒</div>
             `);
             quizWrap.innerHTML = exam.join("");
 
