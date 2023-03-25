@@ -210,7 +210,7 @@
     flex-shrink: 0;
 }
 .quiz__choice label input:checked + span {
-    background-color: #f5ffe7;
+    background-color: #ffe9ed;
 }
 .quiz__choice label input:checked + span::before {
     box-shadow: inset 0 0 0 8px #f76d6d;
