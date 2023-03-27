@@ -142,6 +142,20 @@
 .quiz__answer .confirm:hover {
     background-color: #f9a9a9;
 }
+.quiz__answer .next {
+    background-color: #ec6d6d;
+    border: 6px ridge #f46565;
+    width: 100%;
+    font-family: 'Hallym';
+    padding: 10px 20px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+.quiz__answer .next:hover {
+    background-color: #ba5e5e;
+}
 .quiz__answer .result {
     background-color: #fff;
     border: 6px ridge #f1a0a0;
