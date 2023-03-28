@@ -1,10 +1,9 @@
-.banner__wrap {
-    height: 500px;
+#bannerType {
     box-sizing: border-box;
     position: relative;
     z-index: 10;
 }
-.banner__wrap::before {
+#bannerType::before {
     content: '';
     position: absolute;
     left: 0;
@@ -32,4 +31,18 @@
 .banner__inner a {
     color: #fff;
     text-decoration: underline;
+}
+
+@media (max-width: 960px){
+    .banner__inner h3 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 600px){
+    .banner__inner h3 {
+        font-size: 30px;
+    }
+    .banner__inner p {
+        margin-bottom: 50px;
+    }
 }

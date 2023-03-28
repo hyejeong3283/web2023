@@ -1,3 +1,13 @@
+.section__small {
+    font-size: 14px;
+    border-radius: 50px;
+    background-color: #c95353;
+    color: #fff;
+    padding: 1px 23px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+}
 /* text__wrap */
 .text__wrap {
             
@@ -82,4 +92,15 @@
 }
 .text__btn:hover::before {
     transform: rotate(360deg);
+}
+
+@media (max-width: 960px){
+    .text__inner .text {
+        width: 49%;
+    }
+}
+@media (max-width: 600px){
+    .text__inner .text {
+        width: 100%;
+    }
 }
