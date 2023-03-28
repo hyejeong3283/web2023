@@ -19,6 +19,7 @@
             <li><a href="quizEffect04.html">4</a></li>
             <li><a href="quizEffect05.html">5</a></li>
             <li class="active"><a href="quizEffect06.html">6</a></li>
+            <li><a href="quizEffect07.html">7</a></li>
 
         </ul>
     </header>
@@ -34,10 +35,9 @@
                     <div class="quiz__question"></div>
                     <div class="quiz__view">
                         <div class="dog__wrap">
-                            <p></p>
-                            <span></span>
                             <div class="true">정답입니다!</div>
                             <div class="false">틀렸습니다!</div>
+                            <div class="count"></div>
                             <div class="card-container">
                                 <div class="dog">
                                     <div class="head">
@@ -82,7 +82,6 @@
                         <button class="next">다음 문제</button>
                     </div>
                     <div class="quiz__desc"></div>
-                    <div class="quiz__info">❔❔점</div>
                 </div>
             </div>            
         </div>
@@ -154,15 +153,15 @@
         const quizQuestion = quizWrap.querySelector(".quiz__question");
         const quizChoice = quizWrap.querySelector(".quiz__choice");
         const dogWrap = quizWrap.querySelector(".dog__wrap");
+        const dogWrapCount = quizWrap.querySelector(".dog__wrap .count");
         const quizAnswer = quizWrap.querySelector(".quiz__answer");
         const quizNext = quizWrap.querySelector(".quiz__answer .next");
         const quizDesc = quizWrap.querySelector(".quiz__desc");
-        const quizSum = quizWrap.querySelector(".dog__wrap p");
-        const dogSpan = quizWrap.querySelector(".dog__wrap span");
-        const quizReulstAnswer = quizWrap.querySelector(".quiz__info");
 
-        let quizCount = 0; //문제 수 > 다음 버튼을 눌렀을때 증가 하는 변수
+        let quizCount = 0; //퀴즈 번호 > 다음 버튼을 눌렀을때 증가 하는 변수
         let quizScore = 0; //문제를 맞췄을때만 증가하는 변수
+        
+        console.log(quizInfo.length)
 
         // 문제 출력
         const updateQuiz = (index) => {
@@ -201,8 +200,11 @@
             quizQuestion.innerHTML = questionTag;
             quizChoice.innerHTML = choiceTag;
             quizDesc.innerHTML = descTag;
-            quizSum.innerHTML = "문제 총 갯수 : " +quizInfo.length;
-            dogSpan.innerHTML = `정답 갯수 : ${quizScore}`;
+
+            let quizLength = quizInfo.length - quizCount;
+            dogWrapCount.innerHTML = "총"+ quizInfo.length +"문제 중에"+(quizLength-1)+"문제 남았습니다."
+            // quizSum.innerHTML = "문제 총 갯수 : " +quizInfo.length;
+            // dogSpan.innerHTML = `정답 갯수 : ${quizScore}`;
             
 
             // 보기 선택자
@@ -233,24 +235,29 @@
             if(userAnswer == currentAnswer){
                 quizScore++;
                 dogWrap.classList.add("like");
+                quizAnswer.style.display = "block";
+                quizDesc.style.display = "block";
             } else {
                 dogWrap.classList.add("dislike");
+                quizAnswer.style.display = "block";
+                quizDesc.style.display = "block";
             }
-            dogSpan.innerHTML = `정답 갯수 : ${quizScore}`;
 
-            // 다음 버튼, 해설 나타내기
-            quizAnswer.style.display = "block";
-            quizDesc.style.display = "block";
+            let countLast = Math.ceil((quizScore/quizInfo.length)*100);
+            let countResult = (countLast > 60) ? "합격" : "불합격";
+
+            // 마지막 문제일 때
+            if(quizCount == quizInfo.length -1){
+                quizAnswer.style.display = "none";
+                dogWrapCount.innerHTML = "총"+quizScore+"문제를 맞추었습니다. 점수는"+countLast+"점입니다."+countResult+"입니다.";
+            }           
         };
 
         // 정답 확인
         quizNext.addEventListener("click", () => {
             quizCount ++;
-            if(quizCount == quizInfo.length){
-                quizReulstAnswer.innerHTML = Math.ceil((quizScore / quizInfo.length) * 100) + "점";
-            } else {
-                updateQuiz(quizCount);
-            }
+            updateQuiz(quizCount);
+
             dogWrap.classList.remove("like", "dislike");
         });
     </script>
