@@ -5,158 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/quiz.css">
 </head>
 <body>
-    <script>
-        // 선언적 함수
-        {
-            function func(){
-                document.write("실행되었습니다.1<br>");
-            }
-            func();
-        }
-        // 익명 함수
-        {
-            const func = function(){
-                document.write("실행되었습니다.2<br>");
-            }
-            func();
-        }      
-        // 매개변수 함수
-        {
-            function func(str){
-                document.write(str);
-            }
-            func("실행되었습니다.3<br>")
-        }      
-        // 리턴값 함수
-        {
-            function func(){
-                const str = "실행되었습니다.4<br>";
-                return str;
-            }
-            document.write(func());
-        }    
-        // 선언적 함수 (화살표함수)
-        {
-            func = () => {
-                document.write("실행되었습니다.5<br>");
-            }
-            func();
-        }   
-        // 익명 함수 (화살표함수)
-        {
-            const func = () => {
-                document.write("실행되었습니다.6<br>");
-            }
-            func();
-        }      
-        // 매개변수 함수 (화살표함수)
-        {
-            func = (str) => {
-                document.write(str);
-            }
-            func("실행되었습니다.7<br>");
-        }       
-        // 리턴값 함수 (화살표함수)
-        {
-            func = () => {
-                const str = "실행되었습니다.8<br>";
-                return str;
-            }
-            document.write(func());
-        }    
-        // 익명함수 + 매개변수 + 리턴값(화살표함수)
-        {
-            const func = (str) => {
-                return str;
-            }
-            document.write(func("실행되었습니다.9<br>"));
-        }        
-        // 익명함수 + 매개변수 + 리턴값 + 괄호생략(화살표함수)
-        {
-            const func = str => {
-                return str;
-            }
-            document.write(func("실행되었습니다.10<br>"));
-        }       
-        // 익명함수 + 매개변수 + 리턴값 + 괄호생략 + 리턴생략(화살표함수)
-        {
-            const func = str => str;
-            
-            document.write(func("실행되었습니다.11<br>"));
-        }         
-        // 선언적 함수 + 매개변수 + 리턴값 + 괄호생략 + 리턴생략(화살표함수)
-        {
-            func = str => str;
-            
-            document.write(func("실행되었습니다.12<br>"));
-        }
+    <button class="confirm1">1번 버튼</button><br><br>
+    <button class="confirm2">2번 버튼</button><br><br>
+    <button class="confirm3">3번 버튼</button><br><br>
+    <button class="confirm4">4번 버튼</button><br><br>
+    <button class="confirm5">5번 버튼</button>
+<script>
+/*
+ 각 버튼을 눌렀을때 알림창 뜨게하기
+ 알림창 뜨게하는 실행문 > alert("1번버튼입니다.");
 
+*/
+    // 선택자 만들기
+    // html 태그(<p>,<button>,등)들을 효율적으로 관리하기 위해 사용
+    // 1번 버튼태그를 변수 button1 에 저장 
+    let button1 = document.querySelector(".confirm1");
+    
+    //1번 버튼 클릭했을 때 사용할 함수 만들기
+    //매개변수로 abc 를 받지만 해당값은 문자열이 될 수도 있고 숫자,this 등 다양한 값이 될 수 있다.
+    //매개변수명은 중요하지않음, 결국 변수에 저장된, 혹은 명시된 값을 가지고 내부에서 작업을 진행한다.
+    function choiceSelected(abc){ 
 
-    // let num = 0;
-    // while( num <= 5 ){
-    //     num++;
-    //     document.write("num : "+num+"<br>"); 
-    // }
-
-    // let num2 = 0;
-    // for(let i=0; i<=5; i++){
-    //     num2++;
-    //     document.write("num2 : "+num2+"<br>")
-    // }
-
-    // let num = 0;
-
-    // while( false ){
-    //     num++;
-    //     if( num == 3 ){
-    //         continue;
-    //     }
-    //     if( num > 6 ){
-    //         break;
-    //     }
-    //     document.write(num);
-    // }
-
-    // for(let i=1; i<=5; i++){
+        //함수내에서만 사용할 지역변수[특정 함수,메소드 안에서만 사용할 변수] 를 선언하여 사용한다. 
+        let confirm1Text =  abc.textContent; //confirm1 의 텍스트 : "1번 버튼" 이 나온다. 
         
-    //     if(i == 3){
-    //         break;
-    //     }
-    //     document.write(i);
-    // }
+        alert(confirm1Text);
+    }
+    
+    // 1번 버튼에 "클릭" 이벤트 등록하기
+    // this : 자기자신의 모든 것
+    button1.setAttribute("onclick", "choiceSelected(this)");
 
-    let num = 400;
 
-// switch(num){
-//     case 100 : 
-//         console.log("100");
-//         break;
-//     case 200 : 
-//         console.log("200");
-//         break;
-//     default :
-//     document.write("300");
-// }
+    //문제 : 위 소스를 참고하여 2번버튼에 "안녕하세요." 라는 안내창이 뜨게 해볼 것.
 
-// let direct = 1;
 
-// function gallery(num){
-//     if(num){
-//         if(num == 2) direct++;
-//     } else {
-//         if(num == 1) direct--;
-//     }
-// }
-// console.log(direct);
-// gallery(2);
-
-let a = 0;
-a++; = 
-a= 1; 
-document.write("a++" + a++);
-document.write("a" + a);
-    </script>
+</script>
 </body>
 </html>

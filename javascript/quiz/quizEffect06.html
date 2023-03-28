@@ -34,6 +34,8 @@
                     <div class="quiz__question"></div>
                     <div class="quiz__view">
                         <div class="dog__wrap">
+                            <p></p>
+                            <span></span>
                             <div class="true">정답입니다!</div>
                             <div class="false">틀렸습니다!</div>
                             <div class="card-container">
@@ -80,6 +82,7 @@
                         <button class="next">다음 문제</button>
                     </div>
                     <div class="quiz__desc"></div>
+                    <div class="quiz__info">❔❔점</div>
                 </div>
             </div>            
         </div>
@@ -154,9 +157,12 @@
         const quizAnswer = quizWrap.querySelector(".quiz__answer");
         const quizNext = quizWrap.querySelector(".quiz__answer .next");
         const quizDesc = quizWrap.querySelector(".quiz__desc");
+        const quizSum = quizWrap.querySelector(".dog__wrap p");
+        const dogSpan = quizWrap.querySelector(".dog__wrap span");
+        const quizReulstAnswer = quizWrap.querySelector(".quiz__info");
 
-        let quizCount = 0;
-        let quizScore = 0;
+        let quizCount = 0; //문제 수 > 다음 버튼을 눌렀을때 증가 하는 변수
+        let quizScore = 0; //문제를 맞췄을때만 증가하는 변수
 
         // 문제 출력
         const updateQuiz = (index) => {
@@ -195,6 +201,9 @@
             quizQuestion.innerHTML = questionTag;
             quizChoice.innerHTML = choiceTag;
             quizDesc.innerHTML = descTag;
+            quizSum.innerHTML = "문제 총 갯수 : " +quizInfo.length;
+            dogSpan.innerHTML = `정답 갯수 : ${quizScore}`;
+            
 
             // 보기 선택자
             const quizChoiceSpan = quizWrap.querySelectorAll(".quiz__choice span");
@@ -222,12 +231,12 @@
             let currentAnswer = quizInfo[quizCount].infoAnswer; // 문제 정답
 
             if(userAnswer == currentAnswer){
-                console.log("정답입니다.");
+                quizScore++;
                 dogWrap.classList.add("like");
             } else {
-                console.log("오답입니다.");
                 dogWrap.classList.add("dislike");
             }
+            dogSpan.innerHTML = `정답 갯수 : ${quizScore}`;
 
             // 다음 버튼, 해설 나타내기
             quizAnswer.style.display = "block";
@@ -237,8 +246,11 @@
         // 정답 확인
         quizNext.addEventListener("click", () => {
             quizCount ++;
-            updateQuiz(quizCount);
-
+            if(quizCount == quizInfo.length){
+                quizReulstAnswer.innerHTML = Math.ceil((quizScore / quizInfo.length) * 100) + "점";
+            } else {
+                updateQuiz(quizCount);
+            }
             dogWrap.classList.remove("like", "dislike");
         });
     </script>
