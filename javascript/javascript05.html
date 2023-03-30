@@ -174,7 +174,7 @@
     "javascript reference".match(/reference/);  // "reference"
     "javascript reference".match(/Reference/);  // null
     "javascript reference".match(/Reference/i);  // "reference" 
-    "javascript reference".match(/Reference/g);  // "reference" 
+    "javascript reference".match(/Reference/g);  // null 
     "javascript reference".match(/r/);  // "r" 
     "javascript reference".match(/r/g);  // r r r 
     "javascript reference".match(/w/g);  // null 
@@ -346,8 +346,10 @@
         " javascript".trimStart("");   //javascript
         "javascript ".trimEnd("");     //javascript
 
-        console.log("javascript".split(""));
+        //console.log("javascript".split(""));
         
+        "javascript reference".match(/Reference/g);
+        console.log("javascript reference".match(/r/g));
     </script>
 </body>
 </html>
