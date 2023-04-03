@@ -60,7 +60,7 @@
                         <div class="cbt__title">수험자 : <em>이혜정</em></div>
                         <div class="cbt__score">
                             <span>전체 문제수 : <em>60</em>문항</span>
-                            <span>남은 문제수 : <em>59문항</em></span>
+                            <span>남은 문제수 : <em id="questionCount"></em>문항</span>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="cbt__submit">제출하기</div>
-            <div class="cbt__time">59분 10초</div>
+            <div class="cbt__time" id="input_timer"></div>
         </div>
     </main>
     <!-- //main -->
@@ -143,17 +143,18 @@
             })
             .catch((err) => console.log(err));
         }
-
+        let deCount = 60;
         //문제 만들기
         const newQuestion = () => {
             const exam = [];
             const omr = [];
-
+            
+            document.getElementById("questionCount").innerHTML = deCount;
             questionAll.forEach((question, number) => {
                 exam.push(`
                     <div class="cbt">
                         <div class="cbt__question"><span>${question.number}</span>. ${question.question}</div>
-                        <div class="cbt__question__img"></div>
+                        <div class="cbt__question__img">${question.questionImg}</div>
                         <div class="cbt__selects">
                             <input type="radio" id="select${number}_1" name="select${number}" value="${number+1}_1" onclick="answerSelect(this)">
                             <label for="select${number}_1"><span>${question.choice1}</span></label>
@@ -220,13 +221,77 @@
             });
         }
 
-        const answerSelect = () => {
+        //let tmpSelChk = ""; //이전의 값
+        const answerSelect = (aaa) => {
+
+            // let tmpValue     = aaa.value; //현재의 값
+            // let tmpValue01   = tmpValue.substring(0,1);
+            // let tmpSelChk01  = "";
+
+            // if(tmpSelChk != ""){
+            //     tmpSelChk01 = tmpSelChk.substring(0,1);
+            // }
+
+            // if(tmpValue == tmpSelChk){
+            //     document.getElementById("questionCount").innerHTML = deCount;
+            // }else{
+            //     if(tmpValue01 != tmpSelChk01){
+            //         deCount--;
+            //     }
+                
+            //     document.getElementById("questionCount").innerHTML = deCount;
+            //     tmpSelChk = tmpValue;
+            // }
+
+
+            
 
         }
 
         cbtSubmit.addEventListener("click", answerQuiz);
         dataQuestion();
 
+        //카운트 다운 js 시작
+var countDown = 60 * 60;
+var myTimer;
+
+function fn_countDown(){
+	myTimer = setInterval(alertFunc,1000);
+}
+function alertFunc(){
+	var min = countDown / 60;
+	min = Math.floor(min);
+
+	
+	var sec = countDown - (60 * min);
+	
+	if(min.toString().length == 1){
+		min="0"+min;
+	}
+	
+	if(sec.toString().length == 1){
+		sec="0"+sec;
+	}
+	
+	//화면에 보여지는 부분
+	document.getElementById("input_timer").innerHTML = min + ":"+sec;
+	
+	if(countDown == 0){ //카운트다운 종료 시
+		clearInterval(myTimer);
+        alert("시간이 종료되었습니다.");
+	}
+	countDown--;
+
+	if(min == 0 && sec == 0 ){
+		//console.log("3분 종료");
+		clearInterval(myTimer);
+		document.getElementById("input_timer").innerHTML = "00:00";
+	}
+
+
+}
+fn_countDown();
+//카운트 다운 js 종료
     </script>
 </body>
 </html>
