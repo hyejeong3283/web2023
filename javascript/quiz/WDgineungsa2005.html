@@ -32,7 +32,7 @@
     <main id="main">
         <div class="quiz__wrap__cbt">
             <div class="cbt__header">
-                <h2>2020년 1회 정보처리기능사 기출문제</h2>
+                <h2>2005년 5회 웹디자인기능사 기출문제</h2>
             </div>
             <div class="cbt__conts">
                 <div class="cbt__quiz">
@@ -103,7 +103,7 @@
 
         //데이터 가져오기
         const dataQuestion = () => {
-            fetch("json/gisa2020_01.json")
+            fetch("json/gineungsaWD2005.json")
             .then(res => res.json())
             .then(items => {
                 questionAll = items.map((item, index) => {
