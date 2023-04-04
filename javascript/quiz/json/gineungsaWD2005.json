@@ -2,20 +2,23 @@
     {
         "subject": "웹디자인 기능사",
         "question": "유채색에서 볼 수 있는 대비로 연속대비라고도 하며, 잔상 효과와 가장 밀접한 관련이 있는 것은?",
+        "question_desc": "",
+        "question_img" : "",
         "incorrect_answers": ["색상대비","채도대비","명도대비"],
         "correct_answer": "계시대비",
-        "question_img" : "",
         "desc": "색상대비:명도와 채도가 비슷한 두 가지 이상의 색이 인접해 있을 때 서로 영향을 받아 색상의 차이가 커 보이는 현상이다.<br>계시대비:색상을 보고 일정한 시간 후에 느껴지는 대비 효과로 계속대비라고도 한다. 일종의 소극적 잔상 효과이다.<br>채도대비:명도는 비슷하지만 채도가 다른 두 색이 서로 영향을 받아 채도 차이가 나는 현상, 채도가 높은 색이 채도가 더 높아보인다.<br>명도대비:명도가 다른 두색이 서로 영향을 받아 명도가 다르게 느껴지는 현상.<br>연속대비=계시대비"
     },{
         "subject": "웹디자인 기능사",
         "question": "다음 그림에 대한 설명으로 옳은 것은?<br>",
-        "question_img" : "<img style='width:200px', src=../assets/img/201505_02.png>",
+        "question_desc": "",
+        "question_img" : "<img style='width:200px', src=img/2015_05_02.png>",
         "incorrect_answers": ["반사 운용","회전 운용","조화 패턴"],
         "correct_answer": "팽창 이동 패턴",
         "desc": "점점 커지면서 오른쪽에 복사되기에 팽창 이동 팽창 이동 패턴이 맞습니다.<br>반사운용:좌우반전이나 상하반전이여야 하는데 좌측의 모양과 우측의 모양이 좌우 상하 반전 없음<br>회전운용:좌측의 모양과 우측 모양이 각도 변화 없음<br>조화패턴:조화:다양성을 유지한 상태에서의 어울림의 의미가 강하다. 색깔이 다양하거나 모양이 다양하지 않음."
     },{
         "subject": "웹디자인 기능사",
         "question": "기계화와 대량 생산에 의한 생활 용품의 품질 저하에 반대하여 월리엄 모리스를 중심으로 영국에서 일어난 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["산업혁명","아르 누보","대규모생산운동"],
         "correct_answer": "미술공예운동",
@@ -23,6 +26,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "다음 색체계열 중 피를 많이 보는 수술실과 같은 공간에 가장 알맞은 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["갈색계열","흰색계열","보라색계열"],
         "correct_answer": "녹색계열",
@@ -30,6 +34,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "다음의 관용색명 중 성격이 다른 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["살구색","밤색","레몬색"],
         "correct_answer": "상아색",
@@ -37,6 +42,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "태양광선이 투사되는 위치에 프리즘을 놓아 굴절된 광선을 스크린에 투사하여 나타난 여러 가지 색의 띠를 무엇이라 하는가?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["전자파","감마선","자외선"],
         "correct_answer": "스펙트럼",
@@ -44,6 +50,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "다음 중 나머지 세 가지와 성격이 다른 디자인 분야는?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["광고 디자인","편집 디자인","시각 디자인"],
         "correct_answer": "인테리어 디자인",
@@ -51,6 +58,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "선(Line)에 대한 설명으로 잘못된 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["수직선은 세로로 된 선으로 숭고한 느낌을 준다.","수평선은 가로로 된 선으로 편안한 느낌을 준다.","사선은 비스듬한 선으로 동적인 움직임과 불안한 느낌을 준다."],
         "correct_answer": "유기적인 선은 정확하고 긴장되며 기계적인 느낌을 준다.",
@@ -58,6 +66,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "시각적 질감의 예로 성격이 다른 하나는?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["사진의 망점","인쇄상의 스크린 톤","모니터 주사선"],
         "correct_answer": "대리석 무늬",
@@ -65,13 +74,15 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "체계적인 국가 정책을 기반으로 공학적이며, 기능적인 디자인이 특징인 국가는?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["중국","프랑스","스칸디나비아"],
         "correct_answer": "독일",
         "desc": "바우하우스와 관련된 문제로 독일은 체계적인 국가정책을 기반으로 공학적이며, 기능적인 디자인이 특징입니다."
     },{
         "subject": "웹디자인 기능사",
-        "question": "다음이 설명하고 있는 것은?<br> -주어진 길이를 가장 이상적으로 나누는 비를 말한다.<br> -근삿값이 약 1.618인 무리수이다.",
+        "question": "다음이 설명하고 있는 것은?",
+        "question_desc": "- 주어진 길이를 가장 이상적으로 나누는 비를 말한다.<br> - 근삿값이 약 1.618인 무리수이다.",
         "question_img" : "",
         "incorrect_answers": ["비례","삼각분할","루트비례"],
         "correct_answer": "황금비",
@@ -79,6 +90,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "망막에 다른 색광이 자극하여 혼합되는 현상으로 색 점이 서로 가깝게 있어 명도와 채도가 떨어지지 않는 혼합 방식은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["보색혼합","가산혼합","감산혼합"],
         "correct_answer": "병치혼합",
@@ -86,6 +98,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "음에서도 색을 느낄 수 있는데 이 현상을 무엇이라 하는가?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["명시성","공감각","주목성"],
         "correct_answer": "색청",
@@ -93,6 +106,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "게슈탈트(Gestalt)의 형태에 관한 시각 기본 법칙에 해당 되지 않는 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["근접","유사","연속"],
         "correct_answer": "통일",
@@ -100,6 +114,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "다음 중 2차원 디자인에 포함되지 않는 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["타이포그래피","일러스트레이션","편집디자인"],
         "correct_answer": "애니메이션",
@@ -107,6 +122,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "굿 디자인(Good Design)의 조건으로 옳은 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["합목적성, 실용성, 경제성, 효용성","합목적성, 심미성, 모방성, 경제성","합목적성, 심미성, 질서성, 독창성"],
         "correct_answer": "합목적성, 경제성, 심미성, 독창성",
@@ -114,6 +130,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "먼셀의 무채색 11단계 중 중간 명도에 해당하는 단계는?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["0~3","7~8","9~10"],
         "correct_answer": "4~6",
@@ -121,6 +138,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "디자인 원리 중 균형(balance)에 해당하지 않는 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["대칭","비례","주도와 종속"],
         "correct_answer": "율동",
@@ -128,6 +146,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "다음 중 색채 계획상 유의할 점으로 관련성이 가장 적은 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["안정성","경제성","심미성"],
         "correct_answer": "도덕성",
@@ -135,6 +154,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "'디자인대상이 되는 것은 모두가 실용적으로 사용할 수 있는 것이다'에 해당하는 디자인의 조건으로 가장 옳은 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["심미성","독창성","경제성"],
         "correct_answer": "합목적성",
@@ -142,6 +162,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "HTML 문서에 자바스크립트를 삽입하는 방법으로 틀린 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["HTML 문서의<head>나, <body>태그(tag) 사이에 소스를 직접 입력한다.","자바스크립트 소스를 확장자 .js인 외부 파일로 저장하여 불러온다.","소스가 길어질 경우 함수로 이름을 지정해 호출하여 사용한다."],
         "correct_answer": "HTML 문서의 태그 내에 애플릿과 함께 사용한다.",
@@ -149,13 +170,15 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "다음 인터넷 검색엔진 중 주제별 검색에 의한 1 기법을 사용하지 않는 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["야후(Yahoo)","네이버(Naver)","다음(Daum)"],
         "correct_answer": "멀티서치(Multisearch)",
         "desc": "주제별 검색에 의한 1기법을 사용하는 인터넷 검색엔진은 야후(Yahoo), 네이버(Naver), 다음(Daum)이 있다."
     },{
         "subject": "웹디자인 기능사",
-        "question": "다음 설명에 해당하는 것은?<br> - W3C에서 1996년 HTML을 대체할 목적으로 제안한 것으로 웹상에서 구조화된 문서를 전송 가능하도록 설계된 언어이다.<br> - 사용자가 새로운 태그를 정의할 수 있는 기능을 제공한다.",
+        "question": "다음 설명에 해당하는 것은?",
+        "question_desc": "- W3C에서 1996년 HTML을 대체할 목적으로 제안한 것으로 웹상에서 구조화된 문서를 전송 가능하도록 설계된 언어이다.<br> - 사용자가 새로운 태그를 정의할 수 있는 기능을 제공한다.",
         "question_img" : "",
         "incorrect_answers": ["CSS","DHTML","SOAP"],
         "correct_answer": "XML",
@@ -163,13 +186,15 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "HTML 문서를 구성하는 태그 중 본문을 나타내는 것은?",
+        "question_desc": "",
         "question_img" : "",
-        "incorrect_answers": ["&lt;Meta&gt; &lt;/Meta&gt;","&lt;Head&gt; &lt;/Head&gt;","&lt;Tbody&gt; &lt;/Tbody&gt;"],
-        "correct_answer": "&lt;Body&gt; &lt;/Body&gt;",
-        "desc": "문서전체:&lt;HTML&gt;<br>머리말:&lt;HEAD&gt;<br>제목:&lt;TITLE&gt;<br>본문:&lt;BODY&gt;"
+        "incorrect_answers": ["<Meta> </Meta>","<Head> </Head>","<Tbody> </Tbody>"],
+        "correct_answer": "<Body> </Body>",
+        "desc": "문서전체:<HTML><br>머리말:<HEAD><br>제목:<TITLE><br>본문:<BODY>"
     },{
         "subject": "웹디자인 기능사",
-        "question": "다음 설명과 관계가 없는 것은?<br> 정기적이고 자발적으로 인터넷을 여행하며 정보를 수집하고, 수집한 정보를 검색엔지의 데이터베이스에 저장하는 프로그램을 의미한다.",
+        "question": "다음 설명과 관계가 없는 것은?",
+        "question_desc": "정기적이고 자발적으로 인터넷을 여행하며 정보를 수집하고, 수집한 정보를 검색엔지의 데이터베이스에 저장하는 프로그램을 의미한다.",
         "question_img" : "",
         "incorrect_answers": ["crawler","robot","worm"],
         "correct_answer": "bug",
@@ -177,6 +202,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "자바스크립트 언어의 기본적인 특성으로 틀린 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["대·소문자를 구분한다.","변수 이름에 공백 문자를 사용할 수 있다.","하나의 명령문이 끝나면, 세미콜론(;)을 기술한다"],
         "correct_answer": "변수 이름에 공백 문자를 사용할 수 있다.",
@@ -184,6 +210,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "인터넷 서비스의 종류에 해당하지 않는 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["텔넷(telnet)","전자우편 (e-mail)","채팅(chatting}"],
         "correct_answer": "허브(hub)",
@@ -191,6 +218,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "OSI 7계층 구조를 하위 계층부터 상위 계층까지 순서대로 나열한 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["물리계층→데이터 링크계층→세션계층→네트워크계층→전송계층→응용계층→표현계층","물리계층→데이터 링크계층→네트워크계층→전송계층→세션계층→응용계층→표현계층","전송계층→물리계층→데이터 링크계층→네트워크계층→세션계층→표현계층→응용계층"],
         "correct_answer": "물리계층→데이터 링크계층→네트워크계층→전송계층→세션계층→표현계층→응용계층",
@@ -198,6 +226,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "최상위 도메인 edu와 동일한 성격을 갖는 서브 도메인의 이름은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["go","or","re"],
         "correct_answer": "ac",
@@ -205,6 +234,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "인터넷의 발전을 시대 순으로 옳게 나열한 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["ARPANET→NSFNET→TCP/IP 표준→WWW","TCP/IP 표준→ARPANET→NSFNET→WWW","TCP/IP 표준→NSFNET→ARPANET→WWW"],
         "correct_answer": "ARPANET→TCP/IP 표준→NSFNET→WWW",
@@ -212,6 +242,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "다음 중 웹(Web)에 대한 설명으로 틀린 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["웹은 World Wide Web의 약자이다.","하이퍼텍스트 자료들은 HTML이라는 언어를 통해 표현된다.","HTTP라는 통신 프로토콜을 사용한다."],
         "correct_answer": "문자 중심이며 동영상 자료는 전송이 불가하다.",
@@ -219,6 +250,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "VRML(Virtual Reality Modeling Language)에 관한 특징으로 틀린 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["웹에서 사용되는 언어이므로 플랫폼에 독립적이다.","웹 관련 표준 언어를 수용할 수 있어 HTML 문서와 연계해서 사용할 수 있다.","사이버 쇼핑몰을 만들거나 3차원 채팅 사이트, 가상학교 등의 제작이 가능하다."],
         "correct_answer": "3차원 공간을 표현하는 텍스트 파일로 데이터 전송시간이 길다.",
@@ -226,6 +258,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "다음 중 최초의 GUI 환경의 웹 브라우저는?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["익스플로러","네스케이프","랜드스케이프"],
         "correct_answer": "모자이크",
@@ -233,6 +266,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "비대칭 디지털 가입자 회선인 ADSL에 대한 설명으로 틀린 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["Asymmetric Digital Subscriber Line의 약자로 미국 '벨코어'사에서 개발한 기술이다.","ADSL은 가입자와 전화국 간의 데이터 교환 속도가 서로 다르다.","하나의 회선으로 데이터 통신과 일반전화의 이용이 가능하다."],
         "correct_answer": "고속 데이터 통신과 일반 전화를 동시에 이용할 수 있지만 데이터 통신 속도가 절반으로 떨어지게 된다.",
@@ -240,6 +274,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "인터넷 익스플로러에서 오늘 방문했던 사이트들을 확인하려면 표준단추모음(Standard Button Bar)에서 어떤 버튼을 사용해야 하는가?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["검색","즐겨찾기","보기"],
         "correct_answer": "기록",
@@ -247,6 +282,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "다음 중 웹 페이지 저작도구로 가장 알맞은 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["마야(Maya)","3D 스튜디오 맥스(3D Studio MAX)","소프트이미지(Soft Image)"],
         "correct_answer": "드림위버(Dreamweaver)",
@@ -254,13 +290,15 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "전자우편(e-mail)을 전송할 때 사용되는 프로토콜은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["FTP","Telnet","Usenet"],
         "correct_answer": "SMTP",
         "desc": "인터넷에서 전자 메일 전송은 SMTP(Simple Mail Transfer Protocol)를 지원하는 호스트 사이에 이루어지며, SMTP 호스트는 SMTP 명령과 그에 따른 응답 과정을 반복해 메일을 전송한다.<br>FTP:이용자의 PC와 쇼핑몰 호스팅 서버 간 파일을 송수신하는 프로그램<br>Telnet:네트워크를 관리할 수 있는 프로토콜<br>Usenet:주로 텍스트 형태의 기사들을 전 세계의 사용자들이 공개된 공간에서 주고 받아 토론할 수 있게 고안된 분산 네트워크이다."
     },{
         "subject": "웹디자인 기능사",
-        "question": "HTML 문서에서 하이퍼링크 설정 시 새로운 창 을 열어 문서를 연결하는 속성을 지정하고자 한다. ❶에 들어갈 옵션으로 옳은 것은?<br> &lt;HREF='http://Hrdkorea.or.kr' target='①'&gt;",
+        "question": "HTML 문서에서 하이퍼링크 설정 시 새로운 창 을 열어 문서를 연결하는 속성을 지정하고자 한다. ❶에 들어갈 옵션으로 옳은 것은?",
+        "question_desc": "<HREF='http://Hrdkorea.or.kr' target='①'>",
         "question_img" : "",
         "incorrect_answers": ["_SELF","_PARENT","_TOP"],
         "correct_answer": "_BLANK",
@@ -268,6 +306,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "HTML을 이용한 웹페이지 제작에 대한 설명으로 틀린 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["Markup 태그를 이용하여 제작한다.","다양한 멀티미디어 포맷의 파일을 연결시킬 수 있다.","위지위그(WYSIWYG) 방식은 직접 코드를 입력하지 않아도 웹페이지 구성이 가능하다."],
         "correct_answer": "하나의 그림에는 하나의 문서나 사이트만을 연결할 수 있다.",
@@ -275,6 +314,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "자바 스크립트 내에서 사용되는 String 객체에 대한 설명으로 틀린 것은?(문제 오류로 여기서는 기존 정답인 3번을 누르면 정답 처리 됩니다. 자세한 내용은 해설을 참고하세요.)",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["repIace() - 임의의 문자열에서 지정한 문자를 다른 문자로 변경한다.","match() - 임의의 문자열에서 지정한 문자가 나타나는 첫 번째 위치 값을 반환한다.","toUpperCase() - 문자열에 존재하는 소문자를 모두 대문자로 변환하여 반환한다."],
         "correct_answer": "split() - 지정한 문자열을 검색하여 해당 문자열을 반환한다.",
@@ -282,6 +322,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "물체 경계면의 픽셀을 물체의 색상과 배경의 색상을 혼합해서 표현하여 경계면이 부드럽게 보이도록 하는 기법은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["Dithering","Blending","Compositing"],
         "correct_answer": "Antialiasing",
@@ -289,20 +330,23 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "홈페이지의 해당 컨셉(concept)을 이끌어 내기 위해 종이에 최대한 많이 그려 봄으로써 여러 가지 구성을 만들어 보는 디자인 실무의 초기 작업은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["브레인스토밍","콘텐츠디자인","벤치마킹"],
         "correct_answer": "아이디어스케치",
         "desc": "브레인스토밍:창의적인 아이디어를 생산하기 위한 학습 도구이자 회의 기법이다.<br>벤치마킹:다른 기업으로부터의 학습을 의미하는 용어로서 남의 아이디어를 빌려오거나 성공한 기업의 경영활동을 모방하는 것이다."
     },{
         "subject": "웹디자인 기능사",
-        "question": "다음은 웹디자인 프로세스의 각 단계이다. 순서대로 옳게 나열한 것은?<br> ⓐ 사이트맵 그리기<br> ⓑ 기본디자인 구상하기<br> ⓒ 컨셉 정하기<br> ⓓ 세부디자인 구상하기",
+        "question": "다음은 웹디자인 프로세스의 각 단계이다. 순서대로 옳게 나열한 것은?",
+        "question_desc": "ⓐ 사이트맵 그리기<br> ⓑ 기본디자인 구상하기<br> ⓒ 컨셉 정하기<br> ⓓ 세부디자인 구상하기",
         "question_img" : "",
         "incorrect_answers": ["ⓐ→ⓑ→ⓒ→ⓓ","ⓐ→ⓑ→ⓓ→ⓒ","ⓒ→ⓑ→ⓐ→ⓓ"],
         "correct_answer": "ⓒ→ⓐ→ⓑ→ⓓ",
         "desc": "컨셉 정하기 - 사이트맵 그리기 - 기본 디자인 구상 - 세부 디자인 구상"
     },{
         "subject": "웹디자인 기능사",
-        "question": "다음 설명에 해당하는 것은?<br> - 검은 종이를 접거나 오려서 캐릭터와 배경의 형태를 든 후 이것을 변화에 따라 순서대로 배열해 놓고 촬영하는 기법<br> - 캐릭터와 배경을 두꺼운 종이로 오려 제작하고, 그 뒤에서 조명을 비추어 그림자를 만든 후 촬영<br> - 흑백의 강한 콘트라스트로 구성",
+        "question": "다음 설명에 해당하는 것은?",
+        "question_desc": "- 검은 종이를 접거나 오려서 캐릭터와 배경의 형태를 든 후 이것을 변화에 따라 순서대로 배열해 놓고 촬영하는 기법<br> - 캐릭터와 배경을 두꺼운 종이로 오려 제작하고, 그 뒤에서 조명을 비추어 그림자를 만든 후 촬영<br> - 흑백의 강한 콘트라스트로 구성",
         "question_img" : "",
         "incorrect_answers": ["퍼펫 애니메이션","클레이메이션","로토스코핑 애니메이션"],
         "correct_answer": "실루엣 애니메이션",
@@ -310,6 +354,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "다음 중 웹페이지 제작 방법에 대한 설명으로 틀린 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["메모장과 같은 일반적인 에디터를 사용하여 직접코딩 한다.","워드프로세서를 사용하여 작성 후 HTML로 변환 사용 한다.","","위지위그(WYSIWYG)방식의 웹 에디터인 드림위버로 제작한다."],
         "correct_answer": "코딩 방식의 웹 에디터인 나모웹에디터로 제작한다.",
@@ -317,6 +362,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "웹 페이지를 제작할 때 사용되는 웹 에디터로 옳은 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["플래시","페인터","코렐드로우"],
         "correct_answer": "프론트 페이지",
@@ -324,6 +370,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "웹페이지에서 사용되는 이미지 파일 포맷으로 가장 거리가 먼 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["PNG","GIF","JPG"],
         "correct_answer": "TIFF",
@@ -331,6 +378,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "래스터 이미지(raster image)에 대한 설명으로 틀린 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["화면 확대 시 이미지가 손상된다","비트맵 이미지를 래스터 이미지라고 한다.","디지털 카메라로 찍은 이미지는 래스터 이미지이다."],
         "correct_answer": "일러스트레이터에서 주로 사용되는 이미지 형식이다.",
@@ -338,6 +386,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "웹 그래픽 제작 단계 중 색상(Color) 선택 단계의 작업에 해당하는 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["컴퓨터가 제공하는 여러 가지 기능의 효율적 사용에 대해 연구한다.","이미지의 합성 과정을 통하여 의도한 이미지로 변형한다.","이미지가 선택되면 도구의 기능을 사용하여 축소나 확대 반복, 회전들을 화면상에 제공하며, 이미지를 표현하기 위해 그래픽스 메뉴를 선택한다."],
         "correct_answer": "표현하고자 하는 색상들은 색 혼합이나 색상, 명도, 채도들을 원하는 대로 조절할 수 있고, 색상을 다양하게 사용할 수 있다.",
@@ -345,6 +394,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "일반적인 애니메이션 제작과정으로 옳은 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["스토리보드→기획→제작→음향→레코딩","스토리보드→제작→기획→음향→레코딩","기획→스토리보드→음향→제작→레코딩"],
         "correct_answer": "기획→스토리보드→제작→음향→레코딩",
@@ -352,6 +402,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "키 프레임 방식의 애니메이션에 대한 설명으로 옳은 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["정해진 시간에 한 컷, 한 컷을 보여주는 방식이다.","정지화면을 연속적으로 빠르게 보여주어 움직임을 부여할 수 있다.","보통 만화는 1초에 2~24컷, 영화나 광고는 1초에 80컷을 사용한다."],
         "correct_answer": "움직임의 시작과 끝을 지정하고, 중간단계는 시스템에서 계산되어 자동으로 생성된다.",
@@ -359,6 +410,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "웹 그래픽 디자인은 효과적으로 웹 사용자에게 정보전달을 돕는 도구라고 할 수 있다. 다음 중 정보전달 역할로서의 웹디자인과 가장 거리가 먼 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["정보 접근의 편의성 제공","정보에 대한 빠른 이해력 증대","시각적, 청각적인 친근감 확대"],
         "correct_answer": "개성적인 표현의 다양성",
@@ -366,6 +418,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "미국 Boeing CAD 시스템을 개발하여 CAD 시대의 개막을 알렸으며, 컴퓨터 그래픽스의 단체 SIGGRAPH가 발족된 시대는?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["1950년대","1970년대","1980년대"],
         "correct_answer": "1960년대",
@@ -373,6 +426,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "웹 사이트 관련 용어에 대한 설명으로 틀린 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["네비게이션 바 - 메뉴를 한곳에 모아놓은 그래픽 또는 문자열의 모음","라인 맵 - 이동 경로를 한 번에 보여주는 방식"," 디렉토리 - 주제나 항목별로 범주화하고, 계층적으로 구조화 시킨 것"],
         "correct_answer": "사이트 메뉴 바 - 버튼을 눌러 메뉴를 나타내는 기능",
@@ -380,20 +434,23 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "3차원 캐릭터에서의 자연스러운 동작을 구현하는 애니메이션 기법으로 실제 생명체의 움직임을 추적하여 얻은 데이터를 모델링된 캐릭터에 적용하는 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["Motion Steel","Stop Motion","Virtual Actor"],
         "correct_answer": "Motion Capture",
         "desc": "Motion Capture : 사물이나 사람의 움직임을 자이로스코프 센서를 이용해 디지털로 옮기는 기술을 말한다. 최근에는 영화에서 뿐만 아니라 병원에서는 환자의 보행 교정, 스포츠계에서는 선수의 자세 교정 등 군대ㆍ예능ㆍ스포츠ㆍ의료ㆍ로봇공학까지 많은 분야에서 적용되고 있다. 모션캡처의 방식에 따라 기계식ㆍ자기식ㆍ광학식 등으로 분류된다."
     },{
         "subject": "웹디자인 기능사",
-        "question": "다음과 같은 특징을 가지고 있는 그래픽 틀은?<br> - 벡터 방식으로 정확한 도형을 제작한다.<br> - 그래프나 문자 등의 드로잉 작업, 심벌마크 디자인 등의 작업에 사용된다.<br> - 벡터방식이기 때문에 확대, 변형해도 이미지의 손상이 없다.",
+        "question": "다음과 같은 특징을 가지고 있는 그래픽 틀은?",
+        "question_desc": "- 벡터 방식으로 정확한 도형을 제작한다.<br> - 그래프나 문자 등의 드로잉 작업, 심벌마크 디자인 등의 작업에 사용된다.<br> - 벡터방식이기 때문에 확대, 변형해도 이미지의 손상이 없다.",
         "question_img" : "",
         "incorrect_answers": ["Paint shop","CAM","Maya"],
         "correct_answer": "Illustrator",
         "desc": "Paint shop:코렐에서 개발하는 2D 래스터 이미지 편집 프로그램.<br>CAM:일반적으로 NC 컴퓨터 소프트웨어 애플리케이션을 사용하여 파트 제조를 위한 CNC 공작기계를 제어하는 세부적인 지침(G 코드)을 만드는 것을 일컫습니다.<br>Maya:1998년 개발한 3D 애니메이션 소프트웨어이다."
     },{
         "subject": "웹디자인 기능사",
-        "question": "다음이 설명하고 있는 것은?<br> 장치를 통한 데이터를 주고받는 상호교환을 하며 두 개의 컴퓨터 시스템 장치를 기능적으로 연결한다.",
+        "question": "다음이 설명하고 있는 것은?",
+        "question_desc": "장치를 통한 데이터를 주고받는 상호교환을 하며 두 개의 컴퓨터 시스템 장치를 기능적으로 연결한다.",
         "question_img" : "",
         "incorrect_answers": ["오토캐드","포토샵","레이아웃"],
         "correct_answer": "인터페이스",
@@ -401,6 +458,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "오려낸 그림을 2차원 평면상에서 한 프레임씩 움직이면서 촬영하는 스톱 애니메이션을 말한다. 클레이 애니메이션이나 인형 애니메이션과 비슷하지만 3차원이 아닌 2차원이라는 점에서 구분되는 애니메이션은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["셀 애니메이션","종이 애니메이션","모래 애니메이션"],
         "correct_answer": "컷 아웃 애니메이션",
@@ -408,6 +466,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "HTML에 대한 설명으로 틀린 것은?",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["HTML언어는 W3C를 기반으로 한다.","확장자는 html 또는 htm이다.","HTML은 태그(Tag)로 구성되어 있다."],
         "correct_answer": "HTML은 Hyper Text Marking Language의 약자이다.",
@@ -415,6 +474,7 @@
     },{
         "subject": "웹디자인 기능사",
         "question": "일반적인 좋은 웹사이트 레이아웃에 대한 설명으로 맞는 것은?(문제 오류로 여기서는 기존 정답인 3번을 누르면 정답 처리 됩니다. 자세한 내용은 해설을 참고하세요.)",
+        "question_desc": "",
         "question_img" : "",
         "incorrect_answers": ["메인페이지는 4~6개의 프레임으로 나누어 구성한다.","정보의 중요성에 따라 폰트의 크기를 세분화한다.","웹사이트의 초기화면에는 사이트의 주제를 보여줄 수 있는 대용량의 이미지를 사용한다."],
         "correct_answer": "콘텐츠의 크기가 큰 것은 웹페이지 상단에 배치한다.",
