@@ -10,7 +10,9 @@
 데이터 제어하기 : https://hyejeong3283.github.io/web2023/javascript/javascript04.html      
 
 퀴즈 게임01 : https://hyejeong3283.github.io/web2023/javascript/quiz/quizEffect01.html      
-퀴즈 게임02 : https://hyejeong3283.github.io/web2023/javascript/quiz/quizEffect02.html       
+퀴즈 게임02 : https://hyejeong3283.github.io/web2023/javascript/quiz/quizEffect02.html
+
+웹디자인기능사 json : https://hyejeong3283.github.io/web2023/javascript/quiz/json/gineungsaWD2005.json
 
 # 사이트
 이미지 유형01 : https://hyejeong3283.github.io/web2023/site/imageType/imageType01.html     
