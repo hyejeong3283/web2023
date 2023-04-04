@@ -90,7 +90,7 @@
                     </div> -->
                 </div>
             </div> 
-            <div class="cbt__start">
+            <div class="cbt__start" id="modelDiv"> 
                 <div class="cbt__modal1">
                     <h2>기능사 시험 시작하기</h2>
                     <div class="cbt__choice">
@@ -147,7 +147,7 @@
                     </div>
                     
                     <div data-lit-hue='20' data-lit-count='100' class='lit-container'>
-                        <button class='minimal'>시작하기</button>
+                        <button class='minimal' onclick="fnCloseModel();">시작하기</button>
                     </div>
                 </div>
             </div> 
@@ -168,6 +168,11 @@
         let questionLength = 0;             // 전체 문제수
         let questionRest = questionLength;  // 남은 문제수
 
+        // 모달창 숨겨주기
+        function fnCloseModel(){
+            let modelDiv = document.getElementById("modelDiv");
+            modelDiv.style.display = "none";
+        }
         //데이터 가져오기
         const dataQuestion = () => {
             fetch("json/gisa2020_01.json")
@@ -258,6 +263,13 @@
         
             cbtQuiz.innerHTML = exam.join('');
             cbtOmr.innerHTML = omr.join('');
+            //문제설명이없으면 해당영역 숨겨줌
+            let tmpQuestionDesc = document.querySelectorAll(".cbt__question__desc");
+                tmpQuestionDesc.forEach(el => {
+                    if(el.innerHTML == "undefined"){
+                        el.style.display = "none";
+                    }
+            });           
         }
 
         //정답 확인

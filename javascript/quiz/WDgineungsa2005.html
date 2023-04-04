@@ -103,7 +103,7 @@
 
         //데이터 가져오기
         const dataQuestion = () => {
-            fetch("json/gineungsaWD2005.json")
+            fetch("json/gineungsaJC2005_05.json")
             .then(res => res.json())
             .then(items => {
                 questionAll = items.map((item, index) => {
@@ -242,9 +242,6 @@
             //     document.getElementById("questionCount").innerHTML = deCount;
             //     tmpSelChk = tmpValue;
             // }
-
-
-            
 
         }
 
