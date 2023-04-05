@@ -146,10 +146,21 @@
                         </select>
                     </div>
                     <div class="cbt__view">
-                        이름은 <input type="text" class="name"> 입니다.<br>
+                        이름은 <input type="text" class="cbt__inName"> 입니다.<br>
                         당신은 <span class="subject">웹디자인 기능사시험</span>을 선택했습니다.
                     </div>
                     <button class="cbt__start__btn">시작하기</button>
+                </div>
+            </div>
+            
+            
+            <div class="cbt__start" id="modelDiv2" style="display: none;"> 
+                <div class="cbt__modal">
+                    <h2>점수 확인</h2>
+                    <div class="cbt__view">
+                        점수는 <span class="score"></span>입니다.
+                    </div>
+                    <button class="cbt__start__btn2">닫기</button>
                 </div>
             </div> 
         </div>
@@ -169,6 +180,13 @@
         const cbtStartBtn = document.querySelector(".cbt__start__btn");
         const cbtStart = document.querySelector(".cbt__start");
         const cbtTime = document.querySelector(".cbt__time");
+        const cbtInName = document.querySelector(".cbt__inName");
+        const cbtName = document.querySelector(".cbt__name");
+        const score = document.querySelector(".score");
+        
+        const modelDiv2 = document.querySelector("#modelDiv2");
+        const cbtStartBtn2 = document.querySelector(".cbt__start__btn2");
+        
 
         let questionAll = [];                  //모든 퀴즈 정보
         let questionLength = 0;                //전체 문제수
@@ -180,6 +198,9 @@
         const startQuiz = () => {
             cbtStart.classList.add("hide"); //모달창 제거
 
+            let cbtTmpNm = cbtInName.value; // 모달창에 입력한 이름값
+            cbtName.innerText = cbtTmpNm;   // 수험자로 가져온 모달창 이름값 
+            
             //시간 설정
             questionTime = setInterval(reduceTime, 1000);
         }
@@ -306,8 +327,12 @@
                 const userAnswer = (quizSelectsWrap.querySelector(userSelector) || {}).value;
                 const numberAnswer = userAnswer ? userAnswer.slice(-1) : undefined;
 
+                
+                let correctCount = 0;
+
                 if(numberAnswer == question.answer){
                     console.log("정답입니다.");
+                    correctCount++;
                     cbtSelects[number].parentElement.classList.add("good");
                 } else {
                     console.log("오답입니다.")
@@ -326,7 +351,15 @@
                 } else {
                     quizDesc[number].classList.remove("hide");
                 }
+
+                let getScore =  Math.ceil((correctCount/questionLength)*100);
+                score.innerHTML = getScore;
+                modelDiv2.style.display = "block";
+
             });
+
+
+
         }
 
         // 보기 체크
@@ -393,18 +426,33 @@
                 let minutes = Math.floor(questionTimeRemain / 60);
                 let seconds = questionTimeRemain % 60;
 
-                return minutes + "분 " + seconds + "초";
                 //초의 단위가 한자리 수가 되면 앞에 0을 붙여주기
+                if(minutes.toString().length == 1){
+                    minutes = "0"+minutes;
+                }
+
+                if(seconds.toString().length == 1){
+                    seconds = "0"+seconds;
+                }
+
+                return minutes + "분 " + seconds + "초";
+            
             }
         }
 
         // 시험 끝
         const endQuiz = () => {
-            alert("시험이 끝났습니다")
+            alert("시험이 끝났습니다");
+        }
+        
+        // 닫기 버튼 이벤트(모달창 숨기기)
+        const closeQuiz = () => {
+            modelDiv2.style.display = "none";
         }
 
         cbtStartBtn.addEventListener("click", startQuiz);
         cbtSubmit.addEventListener("click", answerQuiz);
+        cbtStartBtn2.addEventListener("click", closeQuiz);
         // dataQuestion();
 
     </script>
