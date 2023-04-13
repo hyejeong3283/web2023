@@ -141,6 +141,14 @@
 
             // 첫번째 닷 메뉴한테 활성화 표시하기
             sliderDot.firstChild.classList.add("active");
+
+            // 닷 메뉴 클릭해서 이미지 바꾸기
+            let dotActive = document.querySelectorAll(".slider__dot .dot");
+            dotActive.forEach((btn, index) => {
+                btn.addEventListener("click", () => {
+                    gotoSlider(index);
+                });
+            });
         }
 
         init();   
@@ -155,6 +163,7 @@
             let dotActive = document.querySelectorAll(".slider__dot .dot");
             dotActive.forEach((active) => active.classList.remove("active"));
             dotActive[num].classList.add("active");
+            
         }
 
         // 버튼을 클릭했을 때
