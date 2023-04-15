@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또번호 랜덤</title>
+    <style>
+        @import url('https://webfontworld.github.io/suncheon/Suncheon.css');
+        #container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 100vh;
+          background-color: #b4cff9;
+          justify-content: center;
+          font-family: "Suncheon";
+        }
+        h1 {
+            color: rgb(15, 67, 104);
+            font-size: 40px;
+        }
+        button {
+          width: 200px;
+          padding: 20px;
+          font-size: 1.2em;
+          border-radius: 20px;
+          border: 1px solid #aa9e35;
+          background-color: #faf2ac;
+          color: #29963f;
+        }
+        #result {
+          padding: 20px;
+          font-size: 2.8em;
+          color: #691ec5;
+          padding-top: 40px;
+        }
+      </style>
+    </head>
+    <body>
+      <div id="container">
+        <h1>로또 번호 생성기</h1>   
+        <button>클릭</button> 
+        <div id="result"></div>
+      </div>
+    </body>
+    <script>
+        let button = document.querySelector("button");
+        let result = document.querySelector("#result");
+
+        function lottoNumber(){
+            let randomLotto = new Set();
+
+            for(let i=1; i<=6; i++){
+                randomLotto.add(Math.floor(Math.random() * 45) + 1);
+            }
+            result.innerText = [...randomLotto];
+        }
+        button.addEventListener("click", lottoNumber);
+    </script>
+    </html>
