@@ -17,7 +17,6 @@
             align-items:center;
             flex-direction:column;
             height: 100vh;
-            background-color:#d398d9;
             text-align: center;
             font-size: 20px;
             font-family: "Montserrat";
@@ -38,6 +37,7 @@
 </body>
 <script>
     const quotesURL = "http://dummyjson.com/quotes";
+    const bgimgURL = "https://source.unsplash.com/random/?programming"
     function randomQuote(){
         fetch(quotesURL)
         .then(response => response.json())
@@ -49,6 +49,7 @@
             divQuote.innerHTML = data.quotes[randomNumber].quote;
             divAuthor.innerHTML = data.quotes[randomNumber].author;
         })
+        .catch((err) => console.log(err));
     }
     randomQuote();
 
