@@ -44,10 +44,10 @@
     </div>
 </body>
 <script>
-    const quotesURL = "http://dummyjson.com/quotes";
+    // const quotesURL = "http://dummyjson.com/quotes";
 
     function randomQuote(){
-        fetch(quotesURL)
+        fetch('https://dummyjson.com/quotes')
         .then(response => response.json())
         .then(data => {
             let randomNumber = Math.floor(Math.random() * data.quotes.length);
